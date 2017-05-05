@@ -1,0 +1,15 @@
+﻿ /*-------------------------料架设定搜索栏布局-------------------------------------*/
+        .list_item .tab .tdLab {
+            display: inline-block;
+            width: 11%;
+           
+        }
+        
+            .list_item .tab .tdLab .selectBtn {
+                width: 60%;
+            }
+
+        .list_item .tab .tdInput {
+            display: inline-block;
+            width: 20%;
+        }

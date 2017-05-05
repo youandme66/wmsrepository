@@ -1,0 +1,104 @@
+﻿
+.toggerBody>div {
+    margin: 5px auto;
+}
+    .toggerBody>div>label {
+        margin: 0;
+    }
+
+/*---------------------------更新弹框布局------------------------------------*/
+.toggerBody .update_lab {
+    float:left;
+    width: 48%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.toggerBody .update_lab>label {
+    width: 50px;
+}
+
+/*---------------------删除弹框布局-------------------------*/
+.toggerBody .toggerBody_lab label {
+    margin-left: 34%;
+    margin-bottom: 0px;
+}
+
+/*-------------------------料架设定搜索栏布局-------------------------------------*/
+.list_item .tab .tdLab{
+    display:inline-block;
+    width:8%;
+    text-align:center;
+}
+.toggerHeader {
+    text-align: center;
+    font-size: 18px;
+    border-bottom:1px solid #777;
+}
+
+    .list_item .tab .tdLab .selectBtn {
+        width: 70%;
+    }
+
+.list_item .tab .tdInput{
+    display:inline-block;
+    width:14%;
+}
+    .list_item .tab .tdInput > input,textarea {
+        width: 100%;
+    }
+
+/*--------------------------------主从表搜索栏--------------------------------------*/
+.selectSection {
+    margin: 5px auto;
+}
+    .selectSection > button {
+        width: 5%;
+    }
+.footLab {
+    width:8.5%;
+    text-align:center;
+}
+.footInput {
+    width: 14.5%;
+}
+    .footInput > input {
+        width: 100%;
+    }
+/*--------------------------------生成单身样式--------------------------------------*/
+#div_togger4 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+#div_togger5 {
+    display: none;
+    position:fixed;
+    top:200px;
+    left:30%;
+    right:30%;
+    height:auto;
+    margin:0px auto;
+    z-index: 1000;
+    border-radius:5px;
+    background-color:#666;
+}
+#div_togger6 {
+    display: none;
+    position:fixed;
+    top:200px;
+    left:30%;
+    right:30%;
+    height:auto;
+    margin:0px auto;
+    z-index: 1000;
+    border-radius:5px;
+    background-color:#666;
+}

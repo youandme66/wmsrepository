@@ -1,0 +1,20 @@
+﻿/*.list_foot {
+    border-top: 2px solid #d8d1d1;
+    margin-top: 5px;
+}
+.list_foot_header {
+    margin:5px 20px;
+}*/
+
+.list_item .tab .tdLab {
+    display:inline-block;
+    width:8%;
+    text-align :center;
+}
+.list_item .tab .tdInput {
+    display:inline-block;
+    width:14%;
+}
+.list_item .tab .tdLab .tdBtu {
+    width:70%;
+}

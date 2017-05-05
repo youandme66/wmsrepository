@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="popupwindow_text_color">#FF27a6f5</color>
+    <color name="black">#000000</color>
+    <color name="v5_0_1_flipper_head_title_wrapper_black_transparent">#AA000000</color>
+    <color name="transparent_white">#20ffffff</color>
+    <color name="transparent_black">#33000000</color>
+    <color name="publish_poi_place">#ff005092</color>
+    <color name="link_color">#ff005092</color>
+    <color name="photos_popup_menu_item_background">#00000000</color>
+    <color name="photos_popup_menu_item_background_pressed">#ff005092</color>
+    <color name="white">#FFFFFF</color>
+    <color name="galy">#ff333333</color>
+    <color name="photos_popup_menu_item_text">#80333333</color>
+    <color name="photos_popup_menu_item_text_pressed">#FFFFFF</color>
+    <color name="news_pressed">#ffe5e5e5</color>
+    <color name="friend_separator_item_bg">#ffdedede</color>
+    <color name="friend_item_pressed">#80dedede</color>
+    <color name="red">#FF6666</color>
+
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <!-- end zxing -->
+    <color name="textview_color">#ff000000</color><!--黑色字體-->
+    <color name="textview_color_title">#FFFFFF</color><!--白色字體-->
+    <color name="textview_color_red">#FF6666</color><!--紅色字體-->
+    
+    <color name="edittext_color">#ff000000</color><!--黑色字體-->
+    <color name="edittext_readonly_color">#FF6666</color><!--紅色字體-->
+    <color name="divider_color">#80333333</color><!--分隔線顏色:灰色-->
+    <color name="listSelector_color">#00000000</color><!--窗體默認顏色 -->
+    
+    
+</resources>

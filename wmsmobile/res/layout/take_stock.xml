@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/takestock_gohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="@string/takestock"
+            android:textColor="@color/textview_color_title"
+            android:textSize="@dimen/formtitle_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/takestock_refresh"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh_button" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dip"
+        android:background="@drawable/v5_0_1_friend_search_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/takestock_subinvsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="4dip"
+            android:hint="请输入廠庫"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:text="731"
+            android:textSize="@dimen/edittext_textsize_big" />
+
+        <EditText
+            android:id="@+id/takestock_pnsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takestock_subinvsearch"
+            android:layout_margin="4dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="8dip"
+            android:hint="请输入料號"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:text="020E-004Z0MT"
+            android:textSize="@dimen/edittext_textsize_big" />
+        <RadioGroup
+            android:id="@+id/takestock_querytype" 
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/takestock_pnsearch"
+            android:orientation="horizontal" 
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/takestock_querytype_rbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出庫" />
+            <RadioButton
+                android:id="@+id/takestock_querytype_rbin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入庫" />
+            <RadioButton
+                android:id="@+id/takestock_querytype_rball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="所有" />	　
+　　            </RadioGroup>
+
+        <TextView
+            android:id="@+id/takestock_onhandqty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takestock_querytype"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:drawablePadding="4dip"
+            android:singleLine="true"
+            android:text="當前庫存:"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/takestock_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takestock_onhandqty"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:drawablePadding="4dip"
+            android:singleLine="true"
+            android:text="儲位:"
+            android:textSize="@dimen/textview_textsize" />
+         <TextView
+            android:id="@+id/tvpickingupqty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takestock_frame"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:drawablePadding="4dip"
+            android:singleLine="true"
+            android:text="已備料量:"
+            android:textSize="@dimen/textview_textsize" />
+        <Button
+            android:id="@+id/take_stock_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/v5_0_1_guide_button_blue_background"
+            android:layout_below="@+id/tvpickingupqty"
+            android:gravity="center"
+            android:text="生成盤點資料"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+        
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+id/take_stock_btn"
+                android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/takestock_barcodeplus"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="8dip"
+            android:hint="请刷入六合一條碼"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/edittext_textsize" />
+         <EditText
+            android:id="@+id/takestock_edscanedqty"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:drawablePadding="0dip"
+            android:singleLine="true"
+            android:text="0000000"
+            android:textColor="@color/textview_color_red"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+         <Button
+            android:id="@+id/take_scandataclear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:background="@drawable/v5_0_1_guide_button_blue_background"
+            android:gravity="center"
+            android:layout_marginLeft="2dip"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+         </LinearLayout>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/takestock_display"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="#80333333"
+            android:dividerHeight="1px"
+            android:listSelector="#00000000" >
+        </ListView>
+    </HorizontalScrollView>
+
+</LinearLayout>

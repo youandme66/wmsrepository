@@ -1,0 +1,26 @@
+﻿
+.ship_top {
+
+    margin-top:30px;
+}
+.cen_right{
+    padding-right  :100px;
+}
+.cen_left {
+    padding-left :50px;
+}
+ /*-------------------------料架设定搜索栏布局-------------------------------------*/
+        .list_item .tab .tdLab {
+            display: inline-block;
+            width: 12%;
+            text-align: center;
+        }
+
+            .list_item .tab .tdLab .selectBtn {
+                width: 70%;
+            }
+
+        .list_item .tab .tdInput {
+            display: inline-block;
+            width: 20%;
+        }

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivgohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="@string/pomergerlinescan"
+            android:textColor="@color/textview_color_title"
+            android:textSize="@dimen/textview_textsize_big"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivcommit"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/commit_button" />
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/delete_button" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:orientation="horizontal" >
+	<RadioGroup
+            android:id="@+id/rg_delivertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_neidi"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="內地" />
+
+            <RadioButton
+                android:id="@+id/rb_baoguan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="報關" />
+　
+            <RadioButton
+                android:id="@+id/rb_osp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OSP" />
+           
+　　            </RadioGroup>   
+       <TextView 
+            android:id="@+id/tv_cnt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/rg_delivertype"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:text="000"
+            android:textColor="@color/textview_color_red"
+            android:textSize="@dimen/textview_textsize_big"
+            android:textStyle="bold"        />　
+
+      </LinearLayout>
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷入總數 : "
+                android:paddingLeft="10dip"
+                android:textColor="@color/textview_color" 
+                android:textSize="@dimen/textview_textsize"/>
+            <TextView 
+	            android:id="@+id/tv_itemqty"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:paddingLeft="2dip"
+	            android:text="00000"
+	            android:textColor="@color/textview_color_red"
+	            android:textSize="@dimen/textview_textsize_big"
+	            android:textStyle="bold"/>　 
+       
+      </LinearLayout>        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:background="@drawable/v5_0_1_friend_search_bg"
+        android:orientation="vertical" >
+   
+        <EditText
+            android:id="@+id/etdeliverno_suffix"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="8dip"
+            android:hint="请输入送貨單號"
+            android:imeOptions="actionNone"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:textSize="@dimen/textview_textsize_big" />
+
+        <EditText
+            android:id="@+id/etbarcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="8dip"
+            android:hint="请刷入條碼"
+            android:imeOptions="actionNone"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:textSize="@dimen/textview_textsize_big" />
+
+        <EditText
+            android:id="@+id/etlog"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_margin="8dip"
+            android:background="@drawable/edittext_readonly_bg"
+            android:drawablePadding="8dip"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:imeOptions="actionNone"
+            android:paddingRight="30dip"
+            android:textSize="@dimen/textview_textsize" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <ListView
+            android:id="@+id/issue_display"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#80333333"
+            android:dividerHeight="1dp"
+            android:visibility="invisible"
+            android:listSelector="#00000000" >
+        </ListView>
+    </HorizontalScrollView>
+
+</LinearLayout>

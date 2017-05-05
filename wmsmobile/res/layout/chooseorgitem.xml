@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/mylistItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_0_1_friends_item_bg"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/tvchooseorg_orgdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="@dimen/colmargin"
+                android:layout_marginTop="0dip"
+                android:paddingLeft="10dip"
+                android:textColor="@color/textview_color"
+                android:textSize="@dimen/textview_textsize_big" />
+
+            <TextView
+                android:id="@+id/tvchooseorg_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_marginBottom="0dip"
+                android:layout_marginLeft="@dimen/colmargin"
+                android:layout_marginTop="0dip"
+                android:textColor="@color/textview_color"
+                android:textSize="@dimen/textview_textsize_big" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

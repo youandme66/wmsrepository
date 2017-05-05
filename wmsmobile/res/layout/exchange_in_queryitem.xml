@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_0_1_friends_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exchange_in_query_invoice_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_invoice_no"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_required_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_item_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_balance_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_required_qty"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/exchange_in_query_out_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_balance_qty"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+         <TextView
+            android:id="@+id/exchange_in_query_out_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_out_qty"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/exchange_in_query_out_org_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_out_dc"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_out_sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_out_org_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_out_locator_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_out_sub_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_in_org_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_out_locator_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_in_sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_in_org_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_in_locator_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_in_sub_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_exchange_header_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_in_locator_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_exchange_line_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_exchange_header_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_exchange_line_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_model_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_item_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_duty_dept_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_model_name"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_scrap_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_duty_dept_code"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_model_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_scrap_type"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_reason_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_model_type"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_wo_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_reason_code"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_scrap_line_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_wo_no"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_scrap_line_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_customer_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_remark"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_demand_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_customer_code"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_suffocate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_demand_id"
+            android:paddingBottom="0dip"
+            android:textColor="#ff888888"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_transaction_type_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_suffocate_code"
+            android:paddingBottom="0dip"
+            android:textColor="#ff888888"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/exchange_in_query_charge_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/exchange_in_query_transaction_type_id"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/wip_trurnin_detail_gohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="半成品存倉"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/formtitle_textsize_small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/wip_trurnin_detail_commit"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/commit_button" />
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"      
+            android:padding="4dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tunique_id"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="序號:"
+                    android:textColor="#ff333333"
+					android:textStyle="bold"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtunique_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:text="123456"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tvinvoice_no"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="單據號:"
+                    android:textColor="@color/textview_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtinvoice_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_two_no"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="工單:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtwo_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tRegion_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="區域:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtRegion_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tPart_no"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="料號:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtPart_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tRequired_qty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="申請量:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtRequired_qty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tBalance_qty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="剩餘量:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtBalance_qty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tSubinventory_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="庫別:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtSubinventory_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tLocator_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Locator:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtLocator_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tVersion"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="版本:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtVersion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tqty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="入庫量:"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edt_qty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rowheight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wip_trurnin_detail_tFrame_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Frame:"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/wip_trurnin_detail_edtFrame_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

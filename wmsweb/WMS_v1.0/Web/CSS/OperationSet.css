@@ -1,0 +1,19 @@
+﻿
+.toggerBody>div {
+    margin: 5px auto;
+}
+    .toggerBody>div>label {
+        margin: 0;
+    }
+
+/*---------------------------更新弹框布局------------------------------------*/
+.toggerBody .update_lab {
+    float:left;
+    width: 48%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.toggerBody .update_lab>label {
+    width: 50px;
+}

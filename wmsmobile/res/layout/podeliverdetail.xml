@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/podeliverdetail_gohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="@string/podeliverdetail"
+            android:textColor="@color/textview_color_title"
+            android:textSize="@dimen/formtitle_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/podeliverdetail_commit"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/commit_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvorgcode"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="ORG:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtorgcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvpono"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="PO:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtpono"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvpoline"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="PO Line:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtpoline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvpn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="料號:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtpn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tviqcflag"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="IQC Flag:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtiqcflag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvdc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="D/C:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtdc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvsubinv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="庫別:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtsubinv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvframe"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="料架:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtframe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvrcvqty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="暫收量:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtrcvqty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/podeliverdetail_tvdeliverqty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="入庫量:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize_small" />
+
+                <EditText
+                    android:id="@+id/podeliverdetail_edtdeliverqty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="@dimen/edittext_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_textsize_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

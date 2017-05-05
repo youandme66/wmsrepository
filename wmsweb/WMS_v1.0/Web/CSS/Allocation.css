@@ -1,0 +1,10 @@
+﻿.cb_top {
+    margin: 10px 0px 10px 10px;
+}
+    .cb_top label {
+        margin:0 5px 10px 20px;
+    }
+    .cb_top input {
+        margin:0 10px;
+    }
+

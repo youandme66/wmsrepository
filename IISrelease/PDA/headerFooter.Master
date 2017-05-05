@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headerFooter.Master.cs" Inherits="WMS_v1._0.PDA.headerFooter1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/NavMenuSheetPDA.css" rel="stylesheet" />
+    <link href="CSS/projectPDA.css" rel="stylesheet" />
+    <link href="CSS/Ship_projectPDA.css" rel="stylesheet" />
+    <link href="CSS/analogAcquisitionPDA.css" rel="stylesheet" />
+    <title></title>
+    <script type="text/javascript" src="JavaScript/jquery-2.2.4.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <%--Menu控件部分--%>
+            <%--<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" ForeColor="#161621"
+                PathSeparator="1" StaticEnableDefaultPopOutImage="False" CssClass="NavigationMenu">
+                <StaticMenuItemStyle HorizontalPadding="8px" />
+                <StaticHoverStyle BackColor="#0099ff" />
+                <DynamicHoverStyle BackColor="#0099ff" Width="100%" />
+                <DynamicMenuStyle BackColor="#FFFFFF" Width="200%" BorderStyle="Outset" Font-Overline="true" />--%>
+            <%-- 在DynamicMenuStyle加HorizontalPadding  会导致鼠标指向具体时，前面20px部分不会变色！，在DynamicMenuItemStyle里写--%>
+            <%--<DynamicMenuItemStyle CssClass="dynamicMenuItemStyle" HorizontalPadding="20px" />--%>
+
+
+            <%--页眉部分--%><%--注释部分代表未完成--%>
+            <%--<Items>
+                    <asp:MenuItem Text="资料设定" >
+                        <asp:MenuItem Text="Ship/ShipLine设定" Value="Ship/ShipLine设定" NavigateUrl="~/Web/Ship.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="PO/POLine设定" Value="PO/POLine设定" NavigateUrl="~/Web/Po_PoLineSetting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="库别设定" Value="库别设定" NavigateUrl="~/Web/warehouseSetting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="区域设定" Value="区域设定" NavigateUrl="~/Web/areaSetting.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="料架设定" Value="料架设定" NavigateUrl="~/Web/rackSetting.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="Bom设定" Value="Bom设定" NavigateUrl="~/Web/BomSetting.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="工单设定" Value="工单设定" NavigateUrl="~/Web/workOrderSetting.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="料号设定" Value="料号设定" NavigateUrl="~/Web/PnMaterialsIssue.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="客户设定" Value="客户设定" NavigateUrl="~/Web/customerInformation.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="用户设定" Value="用户设定" NavigateUrl="~/Web/customerSetting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="参数设定" Value="参数设定" NavigateUrl="~/Web/parametersSetting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="供应商设定" Value="供应商设定" NavigateUrl="~/Web/VendorSetting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="界面设定" Value="界面设定" NavigateUrl="~/Web/Programs.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="制程设定" Value="制程设定" NavigateUrl="~/Web/OperationSet.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="权限设定" Value="权限设定" NavigateUrl="~/Web/AuthoritySetting.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="复验参数设定" Value="复验参数设定" NavigateUrl="~/Web/CheckParameter.aspx "></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="PO作业">
+                        <asp:MenuItem Text="PO暂收" Value="PO暂收" NavigateUrl="~/Web/PoSuspense.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="PO允收" Value="PO允收" NavigateUrl="~/Web/PoAcceptance.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="PO入库" Value="PO入库" NavigateUrl="~/Web/PoStorage.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="PO退回" Value="PO退回" NavigateUrl="~/Web/PoReturn.aspx "></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="工单作业">
+                        <asp:MenuItem Text="工单领料模拟" Value="工单领料模拟" NavigateUrl="~/Web/analogAcquisition.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="工单发料" Value="工单发料" NavigateUrl="~/Web/worksheetIssue.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="工单入库" Value="工单入库" NavigateUrl="~/Web/WorkSheetIn.aspx "></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="电子单据">
+                        <asp:MenuItem Text="领料单" Value="领料单" NavigateUrl="~/Web/materialRequisitionPage.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="退料单" Value="退料单" NavigateUrl="~/Web/returnOrder.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="调拨单" Value="调拨单" NavigateUrl="~/Web/AllocationList.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="领料单作业" Value="领料单作业" NavigateUrl="~/Web/materialRequisitionOperation.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="调拨单作业" Value="调拨单作业" NavigateUrl="~/Web/Allocation.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="退料单作业" Value="退料单作业" NavigateUrl="~/Web/SingleQuery.aspx "></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="库存管理" >
+                        <asp:MenuItem Text="出货" Value="出货" NavigateUrl="~/Web/Shipping.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="交易明细查询" Value="交易明细查询" NavigateUrl="~/Web/DealDetial.aspx "></asp:MenuItem>
+                        <asp:MenuItem Text="库存查询" Value="库存查询" NavigateUrl="~/Web/DCSerach.aspx "></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="Help" Value="Help" NavigateUrl="~/Web/help4WMS/helpIndex.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="退出系统" Value="退出系统" NavigateUrl="~/Web/Login.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>--%>
+
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                            <span class="sr-only">WMS</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">WMS</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">资料设定
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="ShipSettingPDA.aspx">出货设定</a></li>
+                                    <li><a href="warehouseSettingPDA.aspx">库别设定</a></li>
+                                    <li><a href="areaSettingPDA.aspx">区域设定</a></li>
+                                    <li><a href="rackSettingPDA.aspx">料架设定</a></li>
+                                    <li><a href="BomSettingPDA.aspx">Bom设定</a></li>
+
+                                    <li><a href="PnMaterialsIssuePDA.aspx">料号设定</a></li>
+                                    <li><a href="customerInformationPDA.aspx">客户设定</a></li>
+                                    <li><a href="customerSettingPDA.aspx">用户设定</a></li>
+                                    <li><a href="parametersSettingPDA.aspx">参数设定</a></li>
+                                    <li><a href="VendorSettingPDA.aspx">供应商设定</a></li>
+                                    <li><a href="ProgramsPDA.aspx">界面设定</a></li>
+                                    <li><a href="OperationSetPDA.aspx">制程设定</a></li>
+                                    <li><a href="AuthoritySettingPDA.aspx">权限设定</a></li>
+                                    <li><a href="CheckParameterPDA.aspx">复验参数设定</a></li>
+                                    <li><a href="DpartmentSettingPDA.aspx">部门设定</a></li>
+                                    <li><a href="  ReinspectionOperationPDA.aspx">复验参数</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PO作业
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Po_PoLineSettingPDA.aspx">PO/POLine设定</a></li>
+                                    <li><a href="PoSuspensePDA.aspx">PO暂收</a></li>
+                                    <li><a href="PoAcceptancePDA.aspx">PO允收</a></li>
+                                    <li><a href="PoStoragePDA.aspx">PO入库</a></li>
+                                    <li><a href="PoReturnPDA.aspx">PO退回</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">工单作业 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="workOrderSettingPDA.aspx">工单设定</a></li>
+                                    <li><a href="analogAcquisitionPDA.aspx">工单领料模拟</a></li>
+                                    <li><a href="WorkSheetPickupPDA.aspx">工单备料</a></li>
+                                    <li><a href="worksheetIssuePDA.aspx">工单发料</a></li>
+                                    <li><a href="WorkSheetInPDA.aspx">工单入库</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">电子单据 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="IssueApplyPDA.aspx">领料单申请</a></li>
+                                    <li><a href="IssueQueryPDA.aspx">领料单查询打印</a></li>
+                                    <li style="margin-bottom: 4px;"><a href="IssueWorkPDA.aspx">领料单作业</a></li>
+
+                                    <li><a href="ReturnApplyPDA.aspx">退料单申请</a></li>
+                                    <li><a href="ReturnQueryPDA.aspx">退料单查询打印</a></li>
+                                    <li style="margin-bottom: 4px;"><a href="ReturnWorkPDA.aspx">退料单作业</a></li>
+
+                                    <li><a href="ExchangeApplyPDA.aspx">调拨单申请</a></li>
+                                    <li><a href="ExchangeQueryPDA.aspx">调拨单查询打印</a></li>
+                                    <li><a href="ExchangeWorkPDA.aspx">调拨单作业</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">库存管理 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/PDA/workOrderShippingPDA.aspx">出货</a></li>
+                                    <li><a href="/PDA/DealDetialPDA.aspx">交易明细查询</a></li>
+                                    <li><a href="/PDA/DCSerachPDA.aspx">库存查询</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/PDA/helpIndexPDA.aspx">Help</a>
+                            </li>
+                            <li>
+                                <a href="/PDA/LoginPDA.aspx">退出系统</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <%--子页内容部分--%>
+            <asp:ContentPlaceHolder ClientIDMode="Static" ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <%--页脚部分--%>
+            <div class="footer">
+                <%-- <div class="footerDiv" runat="server" id="local">--%>
+                <asp:Label runat="server" ID="LabelLocal"></asp:Label>
+                <%--    </div>--%>
+                <%-- <div class="footerDiv" runat="server" id="loginTime">
+                    时间:
+                    <asp:Label runat="server" ID="LabelLoginTime"></asp:Label>
+                </div>--%>
+                <%--<div class="footerDiv" runat="server" id="orgCode">org Code:CH1</div>--%>
+                <%--    <div class="footerDiv" runat="server" id="currentUserID">
+                    用户ID: 
+                    <asp:Label runat="server" ID="LabelUserID"></asp:Label>
+                </div>--%>
+
+                <%--<div class="footerDiv" runat="server" id="ip"></div>
+            <div id="Div1" class="col-xs-3 footerDiv" runat="server">lisa 12055 Jay 12051</div>--%>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="JavaScript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JavaScript/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="JavaScript/analogAcquisition.js"></script>
+
+</body>
+</html>
+

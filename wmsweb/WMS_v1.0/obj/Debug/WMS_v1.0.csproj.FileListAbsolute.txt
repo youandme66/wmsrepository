@@ -1,0 +1,55 @@
+F:\CodeFiles\WMS_v1.0\WMS_v1.0\bin\WMS_v1.0.dll
+F:\CodeFiles\WMS_v1.0\WMS_v1.0\bin\WMS_v1.0.pdb
+F:\CodeFiles\WMS_v1.0\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+F:\CodeFiles\WMS_v1.0\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+F:\CodeFiles\WMS_v1.0\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\Pro\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Pro\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\Pro\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\Pro\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\Pro\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\项目\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\项目\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\项目\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\项目\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\项目\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\1\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\1\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\1\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\1\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\1\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+F:\新建文件夹\WMS_v1.0\bin\WMS_v1.0.dll
+F:\新建文件夹\WMS_v1.0\bin\WMS_v1.0.pdb
+F:\新建文件夹\WMS_v1.0\bin\NPOI.dll
+F:\新建文件夹\WMS_v1.0\bin\NPOI.xml
+F:\新建文件夹\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+F:\新建文件夹\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+F:\新建文件夹\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\bin\NPOI.dll
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\bin\NPOI.xml
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\WMS\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+F:\WMS1.1\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+F:\WMS1.1\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+F:\WMS1.1\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+F:\WMS1.1\WMS_v1.0\bin\WMS_v1.0.dll
+F:\WMS1.1\WMS_v1.0\bin\WMS_v1.0.pdb
+F:\WMS1.1\WMS_v1.0\bin\NPOI.dll
+F:\WMS1.1\WMS_v1.0\bin\NPOI.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\bin\NPOI.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\bin\NPOI.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\WMS_v1.0\obj\Debug\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\obj\Debug\WMS_v1.0.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\obj\Debug\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\bin\WMS_v1.0.dll
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\bin\WMS_v1.0.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\bin\NPOI.dll
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\bin\NPOI.xml
+C:\Users\Administrator\Desktop\新建文件夹 (3)\WMS_v1.0\obj\Debug\WMS_v1.0.pdb

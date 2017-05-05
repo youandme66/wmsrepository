@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.askey.wms"
+    android:versionCode="1"
+    android:versionName="2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <!-- zxing -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_askey"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.askey.pda.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- PDA -->  
+        <activity android:name="com.askey.pda.activity.MainActivity" />
+        <activity android:name="com.askey.pda.activity.page.PoWorkActivity" />
+        <activity android:name="com.askey.pda.activity.WebViewActivity" />
+        <activity android:name="com.askey.pda.activity.page.WorkSheetActivity" />
+        <activity android:name="com.askey.pda.activity.page.PageWorkActivity" />
+        <activity android:name="com.askey.pda.activity.page.StorageManageActivity" />
+        <activity android:name="com.askey.pda.activity.page.SettingWorkActivity"/>
+        <activity android:name="com.askey.pda.activity.PrintActivity"/>
+         <!-- PDA -->
+         
+         
+        <activity 
+            android:name="com.askey.activity.main" 
+            android:screenOrientation="portrait"
+            android:label="@string/main_form_name">
+        </activity>
+        <activity
+            android:name="com.askey.activity.changDCFrame"
+            android:screenOrientation="portrait"
+            android:label="@string/changedcframe" >
+        </activity>
+        <activity
+            android:name="com.askey.activity.changeDCFrame_Detail"
+            android:screenOrientation="portrait"
+            android:label="@string/changedcframedetail" >
+        </activity>
+        <activity
+            android:name="com.askey.activity.chooseOrg"
+            android:screenOrientation="portrait"
+            android:label="@string/chooseorg" >
+        </activity>
+        <activity
+            android:name="com.askey.activity.queryStock"
+            android:screenOrientation="portrait"
+            android:label="@string/querystock" >
+        </activity>
+        <activity
+            android:name="com.askey.activity.podeliver"
+            android:screenOrientation="portrait"
+            android:label="@string/podeliver" >
+        </activity>
+        <activity
+            android:name="com.askey.activity.poDeliver_Detail"
+            android:screenOrientation="portrait"
+            android:label="@string/podeliverdetail" >
+        </activity>
+        <activity android:name="com.askey.activity.exchange" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.exchange_detail" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.Return" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.Return_detail" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.issue" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.issue_detail" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.printmtllabel" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.exchange_out" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.exchange_in" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.takeStock" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.pickupmtl" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.pickupmtl_merger" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.wip_turnin_op_head" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.askey.activity.wip_turnin_op_detail" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.askey.activity.simulateTrans" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.askey.activity.queryPoStatusByReceiptNo" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.askey.activity.poMergerLineScan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.askey.activity.ASNLabelCheck" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.askey.activity.finishproduct_turnin" android:screenOrientation="portrait"></activity>
+        
+    </application>
+
+</manifest>

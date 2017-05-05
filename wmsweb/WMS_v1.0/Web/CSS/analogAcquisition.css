@@ -1,0 +1,122 @@
+﻿.list {
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    top: 52px;
+    padding: 0 14%;
+    background-color: rgba(220, 220, 224, 0.71);
+}
+
+.list_top {
+    box-shadow: 10px 10px 10px rgb(190, 192, 193);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 0px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_Table {
+    margin-top: 2.5%;
+    width: 18%;
+    border: 1px solid #b1abab;
+    background-color: transparent;
+    height: 94px;
+}
+    .header_Table td {
+        padding:1%;
+    }
+
+.headerWord {
+    color:red;
+    margin:5%;
+}
+
+.section-top {
+    padding-top: 10px;
+    overflow: auto;
+}
+
+    .section-top > div {
+        float: left;
+    }
+
+    .section-top .Label {
+        width: 8%;
+        text-align: center;
+    }
+
+    .section-top .textInput {
+        width: 20%;
+    }
+
+        .section-top .textInput input {
+            width: 100%;
+        }
+
+        .section-top .textInput button {
+            width: 10%;
+        }
+
+    .section-top .textSelect {
+        width: 15%;
+    }
+
+        .section-top .textSelect select {
+            width: 100%;
+        }
+
+    .section-top .inputBtn {
+        margin-left: 5%;
+    }
+
+.section-bottom {
+    overflow: hidden;
+}
+
+    .section-bottom > div {
+        float: left;
+    }
+
+.ctrlBtn {
+    margin: 20px;
+}
+    /*.ctrlBtn ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }*/
+    .ctrlBtn ul li button {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+.firstGird, .secondGrid {
+    margin: 10px 20px 10px 0px;
+}
+
+.firstGird {
+    width: 10%;
+}
+
+.secondGrid {
+    width: 70%;
+}
+
+.list-foot-header {
+    overflow: auto;
+}
+
+    .list-foot-header ul li {
+        float: left;
+        margin: 10px 0 5px 20px;
+    }
+
+.list-foot-bottom {
+    display: none;
+}

@@ -1,0 +1,19 @@
+﻿.list_item1 {
+    width:70%;
+}
+
+    .list_item1 .tab {
+        width:60%;
+        margin: 0 80px;
+    }
+
+      .list_item1 .tab  .lable{
+        width:80%;
+    }
+#user_name1 {
+    width:80%;
+    margin:5px auto;
+}
+#Button1 {
+    width:90%;
+}

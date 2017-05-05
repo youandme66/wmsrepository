@@ -1,0 +1,52 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list_item1 {
+    width: 80%;
+}
+
+    .list_item1 .tab {
+        width: 50%;
+        margin: 8px 80px;
+    }
+
+        .list_item1 .tab .lable {
+            width: 80%;
+        }
+
+        .list_item1 .tab .input {
+            width: 100%;
+        }
+
+.demo2 {
+    margin: 25px 0;
+}
+
+.warpbox {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+.datainp {
+    width: 200px;
+    border: 1px #ccc solid;
+    padding: 5px;
+    height: 25px;
+    line-height: 30px;
+}
+
+.datep {
+    margin-bottom: 40px;
+    line-height: 24px;
+    margin-right: 15px;
+}
+
+
+.list_foot {
+    box-shadow: 10px 10px 10px rgb(230, 230, 233);
+    border-radius: 5px;
+    background-color: rgb(230, 230, 233);
+}

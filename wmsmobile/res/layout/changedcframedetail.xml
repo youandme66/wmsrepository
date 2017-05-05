@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/changedcframedetail_gohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="@string/changedcframedetail"
+            android:textColor="@color/textview_color_title"
+            android:textSize="@dimen/formtitle_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/changedcframedetail_commit"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/commit_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvpn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="料號:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtPN"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvsubinv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="庫別:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtsubinv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvonhandqty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="庫存量:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtonhandqty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvsimqty"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="模擬量:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtsimqty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvdc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="D/C:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtdc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvframe"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="料架:"
+                    android:textColor="@color/textview_color"
+                    android:textSize="@dimen/textview_textsize" />
+
+                <EditText
+                    android:id="@+id/edtframe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/edittext_bg"
+                    android:imeOptions="actionNone"
+                    android:padding="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/edittext_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

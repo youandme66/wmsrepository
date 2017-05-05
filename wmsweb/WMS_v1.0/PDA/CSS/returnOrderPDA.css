@@ -1,0 +1,86 @@
+﻿
+.toggerBody > div {
+    margin: 5px auto;
+}
+
+    .toggerBody > div > label {
+        margin: 0;
+    }
+
+/*---------------------------更新弹框布局------------------------------------*/
+.toggerBody .update_lab {
+    float: left;
+    width: 48%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+    .toggerBody .update_lab > label {
+        width: 50px;
+    }
+
+/*---------------------删除弹框布局-------------------------*/
+.toggerBody .toggerBody_lab label {
+    margin-left: 34%;
+    margin-bottom: 0px;
+}
+
+
+/*--------------------------------主从表搜索栏--------------------------------------*/
+.selectSection {
+    width: 100%;
+}
+
+    .selectSection .footLab {
+        display: inline-block;
+        width:30%;
+        text-align: center;
+    }
+
+    .selectSection .footInput {
+        display: inline-block;
+        width: 48%;
+    }
+
+.footInput > input {
+    width: 100%;
+}
+/*--------------------------------生成单身样式--------------------------------------*/
+#div_togger4 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#div_togger5 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#div_togger6 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}

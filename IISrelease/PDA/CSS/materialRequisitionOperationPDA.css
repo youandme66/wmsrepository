@@ -1,0 +1,22 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.list_item .tab .tdLab {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+.list_item .tab .tdInput {
+    display: inline-block;
+    width: 41%;
+}
+
+.list_item .tab .tdLab .selectBtu {
+   
+    width: 70%;
+}

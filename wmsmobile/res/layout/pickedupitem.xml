@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_0_1_friends_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pickedupdetail_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize_small" />
+        <TextView
+            android:id="@+id/pickedupdetail_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/pickedupdetail_itemname"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize_small" />
+
+        <TextView
+            android:id="@+id/pickedupdetail_pickedupqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/pickedupdetail_dc"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize_small" />
+
+        <TextView
+            android:id="@+id/pickedupdetail_pickeduptimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/pickedupdetail_pickedupqty"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize_small" />
+        <TextView
+            android:id="@+id/pickedupdetail_pickedupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/pickedupdetail_pickeduptimes"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize_small" />
+                             
+    </RelativeLayout>
+
+</LinearLayout>

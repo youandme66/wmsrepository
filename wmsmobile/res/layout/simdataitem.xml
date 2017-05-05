@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_0_1_friends_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/simdata_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/simdata_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_wo"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/simdata_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_subname"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/simdata_opseq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_itemname"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/simdata_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_opseq"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/simdata_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_dc"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/simdata_reqqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_frame"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />      
+        <TextView
+            android:id="@+id/simdata_simqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_reqqty"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />      
+        <TextView
+            android:id="@+id/simdata_pickupqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/simdata_simqty"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />                       
+    </RelativeLayout>
+
+</LinearLayout>

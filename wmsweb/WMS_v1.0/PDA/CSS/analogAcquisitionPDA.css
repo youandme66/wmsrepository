@@ -1,0 +1,110 @@
+﻿/*#tabTop {
+    margin: 5px 20px;
+}
+
+.topButton {
+    margin: 0px 30px;
+}
+
+.areaStyle {
+    width: 100%;
+    height: 100%;
+    margin: 5px 70px;
+}
+#tabButtom {
+    margin: 5px 220px;
+}
+
+.btnStyle {
+    margin: 20px;
+}*/
+
+.section-top {
+    border-top: 2px solid #d8d1d1;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+    .section-top > div {
+        float: left;
+    }
+
+.section-top-left {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.left-header {
+    margin: 5px auto;
+    overflow: auto;
+}
+
+    .left-header > div {
+        float: left;
+    }
+
+.left-middle {
+    margin: 5px auto;
+    overflow: auto;
+}
+
+    .left-middle > div {
+        float: left;
+    }
+
+.left-middle-left {
+    width: 10%;
+}
+
+.left-middle-right {
+    width: 90%;
+}
+/*.section-top-middle {
+    width: 30%;
+}
+.middle-header {
+    overflow: auto;
+}
+.middle-header > div {
+    float: left;
+}
+.middle-footer-top > div {
+    float: left;
+} 
+.middle-footer-bottom > div {
+    float: left;
+}*/
+.ctrlBtn {
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.section-top-right {
+    width: 40%;
+}
+
+    .section-top-right > div {
+        float: left;
+    }
+
+.top-right-left-header {
+    overflow: auto;
+}
+
+    .top-right-left-header > div {
+        float: left;
+    }
+
+.list-foot-header {
+    overflow: auto;
+}
+
+    .list-foot-header > div {
+        margin-top: 10px;
+        margin-left: 30px;
+        float: left;
+    }
+
+.list-foot-bottom {
+    display: none;
+}

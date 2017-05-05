@@ -1,0 +1,28 @@
+﻿/*.list-header {
+    margin-top:5px;
+    border-top: 2px solid #d8d1d1;
+    padding:10px;
+}*/
+.list{
+    width:100%;
+}
+
+    .list .list-header  {
+        width:60%;
+        margin: 0 80px;
+    }
+
+      .list .list-header   .lable{
+        width:80%;
+    }
+       .list .list-header   .input{
+        width:80%;
+        margin:5px 20px;
+    }
+/*#user_name1 {
+    width:80%;
+    margin:5px auto;
+}
+#Button1 {
+    width:90%;
+}*/

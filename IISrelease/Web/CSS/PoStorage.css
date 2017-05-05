@@ -1,0 +1,53 @@
+﻿/*.list_item1 {
+    margin: 5px 0;
+}
+
+    .list_item1 .tab {
+        width: 100%;
+    }
+
+        .list_item1 .tab label {
+            width: 100%;
+            text-align: center;
+        }
+
+        .list_item1 .tab .labelStyle {
+            width: 5%;
+        }
+
+           .list_item1 .tab .labelstyle {
+            width: 4%;
+        }
+
+        .list_item1 .tab input {
+            width: 100%;
+            margin:  0px; /*调拨单新添样式*/
+        /*}
+
+        .list_item1 .tab .inputStyle{
+            width:18%
+        }
+
+
+        .list_item1 .tab select {
+            width: 90%;
+            padding-left:10%;
+        }*/
+/*-----------------------------------------------------------------------------------------*/
+.list_top {
+    padding: 10px 0;
+}
+.list_item .tab .tdLab{
+    display:inline-block;
+    width:11%;
+    text-align:center;
+}
+
+    .list_item .tab .tdLab .selectBtn {
+        width: 70%;
+    }
+
+.list_item .tab .tdInput{
+    display:inline-block;
+    width:17%;
+}

@@ -1,0 +1,20 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+
+.list_item1 {
+    width:80%;
+}
+
+    .list_item1 .tab {
+        width:50%;
+        margin: 8px 80px;
+    }
+
+      .list_item1 .tab  .lable{
+        width:80%;
+    }
+        .list_item1 .tab .input {
+            width:100%;
+        }

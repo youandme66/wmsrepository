@@ -1,0 +1,14 @@
+﻿.list_item .tab .tdLab{
+    display:inline-block;
+    width:8%;
+    text-align:center;
+}
+
+    .list_item .tab .tdLab .selectBtn {
+        width: 70%;
+    }
+
+.list_item .tab .tdInput{
+    display:inline-block;
+    width:15%;
+}

@@ -1,0 +1,60 @@
+﻿
+
+
+
+
+.tr_show {
+
+    visibility:visible;
+
+}
+
+
+.tr_hide {
+
+    display:none;
+}
+
+
+#div_togger4 {
+    display: none;
+    position:fixed;
+    top:200px;
+    left:30%;
+    right:30%;
+    height:auto;
+    margin:0px auto;
+    z-index: 1000;
+    border-radius:5px;
+    background-color:#666;
+}
+
+#div_togger5 {
+    display: none;
+    position:fixed;
+    top:200px;
+    left:30%;
+    right:30%;
+    height:auto;
+    margin:0px auto;
+    z-index: 1000;
+    border-radius:5px;
+    background-color:#666;
+}
+
+#div_togger6 {
+    display: none;
+    position:fixed;
+    top:200px;
+    left:30%;
+    right:30%;
+    height:auto;
+    margin:0px auto;
+    z-index: 1000;
+    border-radius:5px;
+    background-color:#666;
+}
+
+
+
+

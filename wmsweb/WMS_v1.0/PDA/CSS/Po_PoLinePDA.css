@@ -1,0 +1,70 @@
+﻿#div_togger4 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#div_togger5 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#div_togger6 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+#div_togger7 {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    right: 30%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+/*-------------------------料架设定搜索栏布局-------------------------------------*/
+.list_foot {
+    margin-bottom: 10px;
+}
+.list_item .tab .tdLab {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
+    .list_item .tab .tdLab .selectBtn {
+        width: 70%;
+    }
+
+.list_item .tab .tdInput {
+    display: inline-block;
+    width: 20%;
+}

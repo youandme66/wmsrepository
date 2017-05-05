@@ -1,0 +1,2010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FF3AAF7-3072-44B6-85ED-DFFE591E9480}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS_v1._0</RootNamespace>
+    <AssemblyName>WMS_v1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.2.1\lib\net20\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="jedate\jedate.js" />
+    <Content Include="jedate\jedate.min.js" />
+    <Content Include="jedate\skin\jedate.css" />
+    <Content Include="PDA\AllocationListPDA.aspx" />
+    <Content Include="PDA\AllocationPDA.aspx" />
+    <Content Include="PDA\analogAcquisitionPDA.aspx" />
+    <Content Include="PDA\areaSettingPDA.aspx" />
+    <Content Include="PDA\AuthoritySettingPDA.aspx" />
+    <Content Include="PDA\BomSettingPDA.aspx" />
+    <Content Include="PDA\CheckParameterPDA.aspx" />
+    <Content Include="PDA\CSS\AllocationPDA.css" />
+    <Content Include="PDA\CSS\analogAcquisitionPDA.css" />
+    <Content Include="PDA\CSS\areaSettingPDA.css" />
+    <Content Include="PDA\CSS\AuthoritySettingPDA.css" />
+    <Content Include="PDA\CSS\BomSettingPDA.css" />
+    <Content Include="PDA\CSS\bootstrap.min.css" />
+    <Content Include="PDA\CSS\contentPDA.css" />
+    <Content Include="PDA\CSS\customerInformationPDA.css" />
+    <Content Include="PDA\CSS\customerSettingPDA.css" />
+    <Content Include="PDA\CSS\DealDetialPDA.css" />
+    <Content Include="PDA\CSS\loginstylePDA.css" />
+    <Content Include="PDA\CSS\materialRequisitionOperationPDA.css" />
+    <Content Include="PDA\CSS\mpstylePDA.css" />
+    <Content Include="PDA\CSS\NavMenuSheetPDA.css" />
+    <Content Include="PDA\CSS\OperationSetPDA.css" />
+    <Content Include="PDA\CSS\parametersSettingPDA.css" />
+    <Content Include="PDA\CSS\PoAcceptancePDA.css" />
+    <Content Include="PDA\CSS\PoStoragePDA.css" />
+    <Content Include="PDA\CSS\Po_PoLinePDA.css" />
+    <Content Include="PDA\CSS\projectPDA.css" />
+    <Content Include="PDA\CSS\rackSettingPDA.css" />
+    <Content Include="PDA\CSS\registerPDA.css" />
+    <Content Include="PDA\CSS\returnOrderPDA.css" />
+    <Content Include="PDA\CSS\ShipPDA.css" />
+    <Content Include="PDA\CSS\shippingPDA.css" />
+    <Content Include="PDA\CSS\Ship_projectPDA.css" />
+    <Content Include="PDA\CSS\warehouseSettingPDA.css" />
+    <Content Include="PDA\CSS\workOrderSettingPDA.css" />
+    <Content Include="PDA\CSS\worksheetinPDA.css" />
+    <Content Include="PDA\CSS\worksheetIssuePDA.css" />
+    <Content Include="PDA\customerInformationPDA.aspx" />
+    <Content Include="PDA\customerSettingPDA.aspx" />
+    <Content Include="PDA\DCSerachPDA.aspx" />
+    <Content Include="PDA\DealDetialPDA.aspx" />
+    <Content Include="PDA\DpartmentSettingPDA.aspx" />
+    <Content Include="PDA\ExchangeApplyPDA.aspx" />
+    <Content Include="PDA\ExchangeQueryPDA.aspx" />
+    <Content Include="PDA\ExchangeWorkPDA.aspx" />
+    <Content Include="PDA\help4WMS\1.1.files\1.117.png" />
+    <Content Include="PDA\help4WMS\1.1.html" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101020.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101025.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101034.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101047.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101076.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101107.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101144.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101180.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101189.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101213.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101233.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101277.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101286.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101322.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.101343.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10147.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10159.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10169.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10188.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10195.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10285.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10342.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10387.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10395.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10432.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10453.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10463.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10480.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10486.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10495.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10541.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10549.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10598.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.1062.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.1067.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10670.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10682.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10763.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10841.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10846.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10851.png" />
+    <Content Include="PDA\help4WMS\1.10.files\1.10864.png" />
+    <Content Include="PDA\help4WMS\1.10.html" />
+    <Content Include="PDA\help4WMS\1.11.html" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12127.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12204.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12244.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12278.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12298.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12334.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12383.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.12403.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.1241.png" />
+    <Content Include="PDA\help4WMS\1.12.files\1.1299.png" />
+    <Content Include="PDA\help4WMS\1.12.html" />
+    <Content Include="PDA\help4WMS\1.13.files\1.1311.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.13145.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.13177.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.13179.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.1322.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.13226.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.13228.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.1345.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.1352.png" />
+    <Content Include="PDA\help4WMS\1.13.files\1.1387.png" />
+    <Content Include="PDA\help4WMS\1.13.html" />
+    <Content Include="PDA\help4WMS\1.14.files\1.14218.png" />
+    <Content Include="PDA\help4WMS\1.14.files\1.14269.png" />
+    <Content Include="PDA\help4WMS\1.14.files\1.14349.png" />
+    <Content Include="PDA\help4WMS\1.14.files\1.1438.png" />
+    <Content Include="PDA\help4WMS\1.14.files\1.1487.png" />
+    <Content Include="PDA\help4WMS\1.14.html" />
+    <Content Include="PDA\help4WMS\1.15.files\1.151011.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.151014.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15185.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15244.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15309.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15385.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15450.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15515.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15581.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15709.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.1576.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15780.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15860.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15920.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15964.png" />
+    <Content Include="PDA\help4WMS\1.15.files\1.15967.png" />
+    <Content Include="PDA\help4WMS\1.15.html" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16108.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16109.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16111.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16120.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16121.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.16122.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1616.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1623.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1624.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1625.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1635.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1636.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1637.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1639.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1640.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1652.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1653.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1654.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1656.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1657.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1666.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1667.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1668.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1678.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1679.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1680.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1683.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1684.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1696.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1697.png" />
+    <Content Include="PDA\help4WMS\1.16.files\1.1698.png" />
+    <Content Include="PDA\help4WMS\1.16.html" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2144.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2255.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2259.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.228.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2290.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2375.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.240.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2458.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2520.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2603.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2638.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.264.png" />
+    <Content Include="PDA\help4WMS\1.2.files\1.2730.png" />
+    <Content Include="PDA\help4WMS\1.2.html" />
+    <Content Include="PDA\help4WMS\1.3.files\1.3107.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.3145.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.3182.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.319.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.3251.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.340.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.373.png" />
+    <Content Include="PDA\help4WMS\1.3.files\1.387.png" />
+    <Content Include="PDA\help4WMS\1.3.html" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4113.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4114.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4117.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4118.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4131.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4132.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4133.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4144.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.420.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4222.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4223.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4224.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.4235.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.432.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.433.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.434.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.455.png" />
+    <Content Include="PDA\help4WMS\1.4.files\1.456.png" />
+    <Content Include="PDA\help4WMS\1.4.html" />
+    <Content Include="PDA\help4WMS\1.5.html" />
+    <Content Include="PDA\help4WMS\1.6.files\1.66.png" />
+    <Content Include="PDA\help4WMS\1.6.html" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7104.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7136.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.719.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7224.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7251.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7261.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7285.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.731.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7312.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7358.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7386.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.7410.png" />
+    <Content Include="PDA\help4WMS\1.7.files\1.754.png" />
+    <Content Include="PDA\help4WMS\1.7.html" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8156.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8159.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8175.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.819.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.820.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.821.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8219.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8223.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8226.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8263.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.8266.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.870.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.875.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.877.png" />
+    <Content Include="PDA\help4WMS\1.8.files\1.879.png" />
+    <Content Include="PDA\help4WMS\1.8.html" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91020.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91025.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91034.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91047.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91076.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91107.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91144.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91180.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91189.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91213.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91233.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91277.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91286.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91322.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.91343.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9147.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9159.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9169.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9188.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9195.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9285.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9342.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9387.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9395.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9432.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9453.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9463.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9480.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9486.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9495.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9541.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9549.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9598.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.962.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.967.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9670.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9682.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9763.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9841.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9846.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9851.png" />
+    <Content Include="PDA\help4WMS\1.9.files\1.9864.png" />
+    <Content Include="PDA\help4WMS\1.9.html" />
+    <Content Include="PDA\help4WMS\2.1.files\2.111.png" />
+    <Content Include="PDA\help4WMS\2.1.files\2.1295.png" />
+    <Content Include="PDA\help4WMS\2.1.files\2.155.png" />
+    <Content Include="PDA\help4WMS\2.1.html" />
+    <Content Include="PDA\help4WMS\2.2.files\2.212.png" />
+    <Content Include="PDA\help4WMS\2.2.files\2.259.png" />
+    <Content Include="PDA\help4WMS\2.2.html" />
+    <Content Include="PDA\help4WMS\2.3.files\2.3118.png" />
+    <Content Include="PDA\help4WMS\2.3.files\2.320.png" />
+    <Content Include="PDA\help4WMS\2.3.files\2.329.png" />
+    <Content Include="PDA\help4WMS\2.3.html" />
+    <Content Include="PDA\help4WMS\2.4.files\2.430.png" />
+    <Content Include="PDA\help4WMS\2.4.files\2.460.png" />
+    <Content Include="PDA\help4WMS\2.4.files\2.488.png" />
+    <Content Include="PDA\help4WMS\2.4.html" />
+    <Content Include="PDA\help4WMS\3.1.files\3.19.png" />
+    <Content Include="PDA\help4WMS\3.1.html" />
+    <Content Include="PDA\help4WMS\3.2.files\3.261.png" />
+    <Content Include="PDA\help4WMS\3.2.files\3.28.png" />
+    <Content Include="PDA\help4WMS\3.2.html" />
+    <Content Include="PDA\help4WMS\3.3.html" />
+    <Content Include="PDA\help4WMS\4.1.files\4.16.png" />
+    <Content Include="PDA\help4WMS\4.1.html" />
+    <Content Include="PDA\help4WMS\4.2.files\4.267.png" />
+    <Content Include="PDA\help4WMS\4.2.files\4.2676.png" />
+    <Content Include="PDA\help4WMS\4.2.html" />
+    <Content Include="PDA\help4WMS\4.3.files\4.311.png" />
+    <Content Include="PDA\help4WMS\4.3.files\4.334.png" />
+    <Content Include="PDA\help4WMS\4.3.html" />
+    <Content Include="PDA\help4WMS\4.4.files\4.415.png" />
+    <Content Include="PDA\help4WMS\4.4.files\4.436.png" />
+    <Content Include="PDA\help4WMS\4.4.files\4.457.png" />
+    <Content Include="PDA\help4WMS\4.4.html" />
+    <Content Include="PDA\help4WMS\4.5.files\4.515.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.516.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.526.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.527.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.529.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.530.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.542.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.544.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.547.png" />
+    <Content Include="PDA\help4WMS\4.5.files\4.548.png" />
+    <Content Include="PDA\help4WMS\4.5.html" />
+    <Content Include="PDA\help4WMS\5.1.files\5.175.png" />
+    <Content Include="PDA\help4WMS\5.1.html" />
+    <Content Include="PDA\help4WMS\5.2.files\5.26.png" />
+    <Content Include="PDA\help4WMS\5.2.html" />
+    <Content Include="PDA\help4WMS\5.3.files\5.316.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.317.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.324.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.325.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.327.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.328.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.337.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.338.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.341.png" />
+    <Content Include="PDA\help4WMS\5.3.files\5.354.png" />
+    <Content Include="PDA\help4WMS\5.3.html" />
+    <Content Include="PDA\help4WMS\help4WMSPDA.html" />
+    <Content Include="PDA\help4WMS\helpcontentPDA.html" />
+    <Content Include="PDA\help4WMS\helpmenuPDA.html" />
+    <Content Include="PDA\helpIndexPDA.aspx" />
+    <Content Include="PDA\icon\banner.jpg" />
+    <Content Include="PDA\icon\clear.png" />
+    <Content Include="PDA\icon\delete.png" />
+    <Content Include="PDA\icon\insert.png" />
+    <Content Include="PDA\icon\保存.png" />
+    <Content Include="PDA\icon\关闭.png" />
+    <Content Include="PDA\icon\删除记录.png" />
+    <Content Include="PDA\icon\导出excel.png" />
+    <Content Include="PDA\icon\搜索.png" />
+    <Content Include="PDA\IssueApplyPDA.aspx" />
+    <Content Include="PDA\IssueQueryPDA.aspx" />
+    <Content Include="PDA\IssueWorkPDA.aspx" />
+    <Content Include="PDA\JavaScript\allocationList.js" />
+    <Content Include="PDA\JavaScript\analogAcquisition.js" />
+    <Content Include="PDA\JavaScript\areaSettingJS.js" />
+    <Content Include="PDA\JavaScript\AuthoritySetting.js" />
+    <Content Include="PDA\JavaScript\BomSetting.js" />
+    <Content Include="PDA\JavaScript\bootstrap.min.js" />
+    <Content Include="PDA\JavaScript\Check_Parameter.js" />
+    <Content Include="PDA\JavaScript\customerInformation.js" />
+    <Content Include="PDA\JavaScript\customerSetting.js" />
+    <Content Include="PDA\JavaScript\DCserach.js" />
+    <Content Include="PDA\JavaScript\DepartmentSetting.js" />
+    <Content Include="PDA\JavaScript\Interaction.js" />
+    <Content Include="PDA\JavaScript\jquery-2.2.4.min.js" />
+    <Content Include="PDA\JavaScript\jquery.datetimepicker.js" />
+    <Content Include="PDA\JavaScript\materialRequisition.js" />
+    <Content Include="PDA\JavaScript\materiaRequisitionOperation.js" />
+    <Content Include="PDA\JavaScript\OperationSet.js" />
+    <Content Include="PDA\JavaScript\parametersSetting.js" />
+    <Content Include="PDA\JavaScript\PnMaterialsIssue.js" />
+    <Content Include="PDA\JavaScript\PoAcceptance.js" />
+    <Content Include="PDA\JavaScript\poreturn.js" />
+    <Content Include="PDA\JavaScript\PoStorage.js" />
+    <Content Include="PDA\JavaScript\PoSuspense.js" />
+    <Content Include="PDA\JavaScript\Po_PoLine.js" />
+    <Content Include="PDA\JavaScript\project.js" />
+    <Content Include="PDA\JavaScript\rackSetting.js" />
+    <Content Include="PDA\JavaScript\returnOrder.js" />
+    <Content Include="PDA\JavaScript\shipping.js" />
+    <Content Include="PDA\JavaScript\Ship_project.js" />
+    <Content Include="PDA\JavaScript\SingleQuery.js" />
+    <Content Include="PDA\JavaScript\vendorsetting.js" />
+    <Content Include="PDA\JavaScript\warehouseSetting.js" />
+    <Content Include="PDA\JavaScript\workOrderSetting.js" />
+    <Content Include="PDA\JavaScript\worksheetin.js" />
+    <Content Include="PDA\JavaScript\worksheetIssue.js" />
+    <Content Include="PDA\LoginPDA.aspx" />
+    <Content Include="PDA\materialRequisitionOperationPDA.aspx" />
+    <Content Include="PDA\materialRequisitionPagePDA.aspx" />
+    <Content Include="PDA\ModifyPasswordPDA.aspx" />
+    <Content Include="PDA\OperationSetPDA.aspx" />
+    <Content Include="PDA\parametersSettingPDA.aspx" />
+    <Content Include="PDA\PnMaterialsIssuePDA.aspx" />
+    <Content Include="PDA\PoAcceptancePDA.aspx" />
+    <Content Include="PDA\PoReturnPDA.aspx" />
+    <Content Include="PDA\PoStoragePDA.aspx" />
+    <Content Include="PDA\PoSuspensePDA.aspx" />
+    <Content Include="PDA\Po_PoLineSettingPDA.aspx" />
+    <Content Include="PDA\ProgramsPDA.aspx" />
+    <Content Include="PDA\rackSettingPDA.aspx" />
+    <Content Include="PDA\RegisterPDA.aspx" />
+    <Content Include="PDA\ReinspectionOperationPDA.aspx" />
+    <Content Include="PDA\ReturnApplyPDA.aspx" />
+    <Content Include="PDA\returnOrderPDA.aspx" />
+    <Content Include="PDA\ReturnQueryPDA.aspx" />
+    <Content Include="PDA\ReturnWorkPDA.aspx" />
+    <Content Include="PDA\ShipSettingPDA.aspx" />
+    <Content Include="PDA\SingleQueryPDA.aspx" />
+    <Content Include="PDA\VendorSettingPDA.aspx" />
+    <Content Include="PDA\warehouseSettingPDA.aspx" />
+    <Content Include="PDA\WelcomePDA.aspx" />
+    <Content Include="PDA\workOrderSettingPDA.aspx" />
+    <Content Include="PDA\workOrderShippingPDA.aspx" />
+    <Content Include="PDA\WorkSheetInPDA.aspx" />
+    <Content Include="PDA\worksheetIssuePDA.aspx" />
+    <Content Include="PDA\WorkSheetPickupPDA.aspx" />
+    <Content Include="stylesheets\github-light.css" />
+    <Content Include="stylesheets\normalize.css" />
+    <Content Include="stylesheets\stylesheet.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web\Allocation.aspx" />
+    <Content Include="Web\AllocationList.aspx" />
+    <Content Include="Web\analogAcquisition.aspx" />
+    <Content Include="Web\areaSetting.aspx" />
+    <Content Include="Web\AuthoritySetting.aspx" />
+    <Content Include="Web\BomSetting.aspx" />
+    <Content Include="Web\CheckParameter.aspx" />
+    <Content Include="Web\CSS\Allocation.css" />
+    <Content Include="Web\CSS\analogAcquisition.css" />
+    <Content Include="Web\CSS\areaSetting.css" />
+    <Content Include="Web\CSS\AuthoritySetting.css" />
+    <Content Include="Web\CSS\BomSetting.css" />
+    <Content Include="Web\CSS\bootstrap.min.css" />
+    <Content Include="Web\CSS\content.css" />
+    <Content Include="Web\CSS\customerInformation.css" />
+    <Content Include="Web\CSS\customerSetting.css" />
+    <Content Include="Web\CSS\DealDetial.css" />
+    <Content Include="Web\CSS\IssueApply.css" />
+    <Content Include="Web\CSS\login.css" />
+    <Content Include="Web\CSS\materialequisitionPrint.css" />
+    <Content Include="Web\CSS\materialRequisitionOperation.css" />
+    <Content Include="Web\CSS\mpstyle.css" />
+    <Content Include="Web\CSS\NavMenuSheet.css" />
+    <Content Include="Web\CSS\OperationSet.css" />
+    <Content Include="Web\CSS\parametersSetting.css" />
+    <Content Include="Web\CSS\PoAcceptance.css" />
+    <Content Include="Web\CSS\PoStorage.css" />
+    <Content Include="Web\CSS\Po_PoLine.css" />
+    <Content Include="Web\CSS\printMaterialReturning.css" />
+    <Content Include="Web\CSS\printStorageList.css" />
+    <Content Include="Web\CSS\printTransFerringOrder.css" />
+    <Content Include="Web\CSS\project.css" />
+    <Content Include="Web\CSS\rackSetting.css" />
+    <Content Include="Web\CSS\register.css" />
+    <Content Include="Web\CSS\returnOrder.css" />
+    <Content Include="Web\CSS\Ship.css" />
+    <Content Include="Web\CSS\shipping.css" />
+    <Content Include="Web\CSS\Ship_project.css" />
+    <Content Include="Web\CSS\warehouseSetting.css" />
+    <Content Include="Web\CSS\workOrderSetting.css" />
+    <Content Include="Web\CSS\worksheetin.css" />
+    <Content Include="Web\CSS\worksheetIssue.css" />
+    <Content Include="Web\customerInformation.aspx" />
+    <Content Include="Web\customerSetting.aspx" />
+    <Content Include="Web\DCSerach.aspx" />
+    <Content Include="Web\DealDetial.aspx" />
+    <Content Include="Web\DpartmentSetting.aspx" />
+    <Content Include="Web\ExchangeApply.aspx" />
+    <Content Include="Web\ExchangeQuery.aspx" />
+    <Content Include="Web\ExchangeWork.aspx" />
+    <Content Include="Web\help4WMS\1.1.files\1.117.png" />
+    <Content Include="Web\help4WMS\1.1.html" />
+    <Content Include="Web\help4WMS\1.10.files\1.101020.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101025.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101034.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101047.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101076.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101107.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101144.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101180.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101189.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101213.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101233.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101277.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101286.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101322.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.101343.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10147.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10159.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10169.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10188.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10195.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10285.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10342.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10387.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10395.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10432.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10453.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10463.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10480.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10486.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10495.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10541.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10549.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10598.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.1062.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.1067.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10670.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10682.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10763.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10841.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10846.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10851.png" />
+    <Content Include="Web\help4WMS\1.10.files\1.10864.png" />
+    <Content Include="Web\help4WMS\1.10.html" />
+    <Content Include="Web\help4WMS\1.11.html" />
+    <Content Include="Web\help4WMS\1.12.html" />
+    <Content Include="Web\help4WMS\1.13.html" />
+    <Content Include="Web\help4WMS\1.14.files\1.14218.png" />
+    <Content Include="Web\help4WMS\1.14.files\1.14269.png" />
+    <Content Include="Web\help4WMS\1.14.files\1.14349.png" />
+    <Content Include="Web\help4WMS\1.14.files\1.1438.png" />
+    <Content Include="Web\help4WMS\1.14.files\1.1487.png" />
+    <Content Include="Web\help4WMS\1.14.html" />
+    <Content Include="Web\help4WMS\1.15.files\1.151011.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.151014.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15185.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15244.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15309.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15385.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15450.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15515.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15581.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15709.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.1576.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15780.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15860.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15920.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15964.png" />
+    <Content Include="Web\help4WMS\1.15.files\1.15967.png" />
+    <Content Include="Web\help4WMS\1.15.html" />
+    <Content Include="Web\help4WMS\1.16.files\1.16108.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.16109.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.16111.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.16120.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.16121.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.16122.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1616.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1623.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1624.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1625.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1635.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1636.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1637.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1639.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1640.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1652.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1653.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1654.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1656.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1657.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1666.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1667.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1668.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1678.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1679.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1680.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1683.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1684.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1696.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1697.png" />
+    <Content Include="Web\help4WMS\1.16.files\1.1698.png" />
+    <Content Include="Web\help4WMS\1.16.html" />
+    <Content Include="Web\help4WMS\1.2.files\1.2144.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2255.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2259.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.228.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2290.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2375.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.240.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2458.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2520.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2603.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2638.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.264.png" />
+    <Content Include="Web\help4WMS\1.2.files\1.2730.png" />
+    <Content Include="Web\help4WMS\1.2.html" />
+    <Content Include="Web\help4WMS\1.3.files\1.3107.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.3145.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.3182.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.319.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.3251.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.340.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.373.png" />
+    <Content Include="Web\help4WMS\1.3.files\1.387.png" />
+    <Content Include="Web\help4WMS\1.3.html" />
+    <Content Include="Web\help4WMS\1.4.files\1.4113.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4114.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4117.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4118.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4131.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4132.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4133.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4144.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.420.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4222.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4223.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4224.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.4235.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.432.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.433.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.434.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.455.png" />
+    <Content Include="Web\help4WMS\1.4.files\1.456.png" />
+    <Content Include="Web\help4WMS\1.4.html" />
+    <Content Include="Web\help4WMS\1.5.html" />
+    <Content Include="Web\help4WMS\1.6.files\1.66.png" />
+    <Content Include="Web\help4WMS\1.6.html" />
+    <Content Include="Web\help4WMS\1.7.files\1.7104.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7136.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.719.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7224.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7251.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7261.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7285.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.731.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7312.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7358.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7386.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.7410.png" />
+    <Content Include="Web\help4WMS\1.7.files\1.754.png" />
+    <Content Include="Web\help4WMS\1.7.html" />
+    <Content Include="Web\help4WMS\1.8.files\1.8156.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8159.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8175.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.819.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.820.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.821.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8219.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8223.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8226.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8263.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.8266.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.870.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.875.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.877.png" />
+    <Content Include="Web\help4WMS\1.8.files\1.879.png" />
+    <Content Include="Web\help4WMS\1.8.html" />
+    <Content Include="Web\help4WMS\1.9.files\1.91020.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91025.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91034.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91047.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91076.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91107.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91144.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91180.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91189.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91213.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91233.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91277.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91286.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91322.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.91343.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9147.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9159.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9169.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9188.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9195.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9285.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9342.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9387.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9395.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9432.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9453.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9463.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9480.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9486.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9495.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9541.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9549.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9598.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.962.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.967.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9670.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9682.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9763.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9841.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9846.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9851.png" />
+    <Content Include="Web\help4WMS\1.9.files\1.9864.png" />
+    <Content Include="Web\help4WMS\1.9.html" />
+    <Content Include="Web\help4WMS\2.1.files\2.111.png" />
+    <Content Include="Web\help4WMS\2.1.files\2.1295.png" />
+    <Content Include="Web\help4WMS\2.1.files\2.155.png" />
+    <Content Include="Web\help4WMS\2.1.html" />
+    <Content Include="Web\help4WMS\2.2.files\2.212.png" />
+    <Content Include="Web\help4WMS\2.2.files\2.259.png" />
+    <Content Include="Web\help4WMS\2.2.html" />
+    <Content Include="Web\help4WMS\2.3.files\2.3118.png" />
+    <Content Include="Web\help4WMS\2.3.files\2.320.png" />
+    <Content Include="Web\help4WMS\2.3.files\2.329.png" />
+    <Content Include="Web\help4WMS\2.3.html" />
+    <Content Include="Web\help4WMS\2.4.files\2.430.png" />
+    <Content Include="Web\help4WMS\2.4.files\2.460.png" />
+    <Content Include="Web\help4WMS\2.4.files\2.488.png" />
+    <Content Include="Web\help4WMS\2.4.html" />
+    <Content Include="Web\help4WMS\3.1.files\3.19.png" />
+    <Content Include="Web\help4WMS\3.1.html" />
+    <Content Include="Web\help4WMS\3.2.files\3.261.png" />
+    <Content Include="Web\help4WMS\3.2.files\3.28.png" />
+    <Content Include="Web\help4WMS\3.2.html" />
+    <Content Include="Web\help4WMS\3.3.html" />
+    <Content Include="Web\help4WMS\4.1.files\4.16.png" />
+    <Content Include="Web\help4WMS\4.1.html" />
+    <Content Include="Web\help4WMS\4.2.files\4.267.png" />
+    <Content Include="Web\help4WMS\4.2.files\4.2676.png" />
+    <Content Include="Web\help4WMS\4.2.html" />
+    <Content Include="Web\help4WMS\4.3.files\4.311.png" />
+    <Content Include="Web\help4WMS\4.3.files\4.334.png" />
+    <Content Include="Web\help4WMS\4.3.html" />
+    <Content Include="Web\help4WMS\4.4.files\4.415.png" />
+    <Content Include="Web\help4WMS\4.4.files\4.436.png" />
+    <Content Include="Web\help4WMS\4.4.files\4.457.png" />
+    <Content Include="Web\help4WMS\4.4.html" />
+    <Content Include="Web\help4WMS\4.5.files\4.515.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.516.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.526.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.527.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.529.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.530.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.542.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.544.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.547.png" />
+    <Content Include="Web\help4WMS\4.5.files\4.548.png" />
+    <Content Include="Web\help4WMS\4.5.html" />
+    <Content Include="Web\help4WMS\5.1.files\5.175.png" />
+    <Content Include="Web\help4WMS\5.1.html" />
+    <Content Include="Web\help4WMS\5.2.files\5.26.png" />
+    <Content Include="Web\help4WMS\5.2.html" />
+    <Content Include="Web\help4WMS\5.3.files\5.316.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.317.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.324.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.325.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.327.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.328.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.337.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.338.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.341.png" />
+    <Content Include="Web\help4WMS\5.3.files\5.354.png" />
+    <Content Include="Web\help4WMS\5.3.html" />
+    <Content Include="Web\help4WMS\help4WMS.html" />
+    <Content Include="Web\help4WMS\helpcontent.html" />
+    <Content Include="Web\help4WMS\helpmenu.html" />
+    <Content Include="Web\helpIndex.aspx" />
+    <Content Include="Web\icon\banner.jpg" />
+    <Content Include="Web\icon\clear.png" />
+    <Content Include="Web\icon\delete.png" />
+    <Content Include="Web\icon\insert.png" />
+    <Content Include="Web\icon\保存.png" />
+    <Content Include="Web\icon\关闭.png" />
+    <Content Include="Web\icon\删除记录.png" />
+    <Content Include="Web\icon\导出excel.png" />
+    <Content Include="Web\icon\搜索.png" />
+    <Content Include="Web\InventoryQuery.aspx" />
+    <Content Include="Web\IssueApply.aspx" />
+    <Content Include="Web\IssueQuery.aspx" />
+    <Content Include="Web\IssueWork.aspx" />
+    <Content Include="Web\JavaScript\allocationList.js" />
+    <Content Include="Web\JavaScript\analogAcquisition.js" />
+    <Content Include="Web\JavaScript\areaSettingJS.js" />
+    <Content Include="Web\JavaScript\AuthoritySetting.js" />
+    <Content Include="Web\JavaScript\BomSetting.js" />
+    <Content Include="Web\JavaScript\bootstrap.min.js" />
+    <Content Include="Web\JavaScript\Check_Parameter.js" />
+    <Content Include="Web\JavaScript\customerInformation.js" />
+    <Content Include="Web\JavaScript\customerSetting.js" />
+    <Content Include="Web\JavaScript\DCserach.js" />
+    <Content Include="Web\JavaScript\DepartmentSetting.js" />
+    <Content Include="Web\JavaScript\ExchangeWorkJS.js" />
+    <Content Include="Web\JavaScript\Interaction.js" />
+    <Content Include="Web\JavaScript\IssueWork.js" />
+    <Content Include="Web\JavaScript\jquery-2.2.4.min.js" />
+    <Content Include="Web\JavaScript\jquery.datetimepicker.js" />
+    <Content Include="Web\JavaScript\materialRequisition.js" />
+    <Content Include="Web\JavaScript\materiaRequisitionOperation.js" />
+    <Content Include="Web\JavaScript\OperationSet.js" />
+    <Content Include="Web\JavaScript\parametersSetting.js" />
+    <Content Include="Web\JavaScript\PnMaterialsIssue.js" />
+    <Content Include="Web\JavaScript\PoAcceptance.js" />
+    <Content Include="Web\JavaScript\poreturn.js" />
+    <Content Include="Web\JavaScript\PoStorage.js" />
+    <Content Include="Web\JavaScript\PoSuspense.js" />
+    <Content Include="Web\JavaScript\Po_PoLine.js" />
+    <Content Include="Web\JavaScript\PrintJS.js" />
+    <Content Include="Web\JavaScript\printMaterialReturningJS.js" />
+    <Content Include="Web\JavaScript\print_wo_no.js" />
+    <Content Include="Web\JavaScript\project.js" />
+    <Content Include="Web\JavaScript\rackSetting.js" />
+    <Content Include="Web\JavaScript\ReinspectionOperation.js" />
+    <Content Include="Web\JavaScript\returnOrder.js" />
+    <Content Include="Web\JavaScript\ReturnWorkJS.js" />
+    <Content Include="Web\JavaScript\shipping.js" />
+    <Content Include="Web\JavaScript\Ship_project.js" />
+    <Content Include="Web\JavaScript\SingleQuery.js" />
+    <Content Include="Web\JavaScript\vendorsetting.js" />
+    <Content Include="Web\JavaScript\warehouseSetting.js" />
+    <Content Include="Web\JavaScript\workOrderSetting.js" />
+    <Content Include="Web\JavaScript\worksheetin.js" />
+    <Content Include="Web\JavaScript\worksheetIssue.js" />
+    <Content Include="Web\Login.aspx" />
+    <Content Include="Web\materialRequisitionOperation.aspx" />
+    <Content Include="Web\materialRequisitionPage.aspx" />
+    <Content Include="Web\ModifyPassword.aspx" />
+    <Content Include="Web\OperationSet.aspx" />
+    <Content Include="Web\parametersSetting.aspx" />
+    <Content Include="Web\PnMaterialsIssue.aspx" />
+    <Content Include="Web\PoAcceptance.aspx" />
+    <Content Include="Web\PoReturn.aspx" />
+    <Content Include="Web\PoStorage.aspx" />
+    <Content Include="Web\PoSuspense.aspx" />
+    <Content Include="Web\Po_PoLineSetting.aspx" />
+    <Content Include="Web\printMaterialRequisition.aspx" />
+    <Content Include="Web\printMaterialReturning.aspx" />
+    <Content Include="Web\printSinglePreparation.aspx" />
+    <Content Include="Web\printStorageList.aspx" />
+    <Content Include="Web\printTransFerringOrder.aspx" />
+    <Content Include="Web\printWoNo.aspx" />
+    <Content Include="Web\Programs.aspx" />
+    <Content Include="Web\rackSetting.aspx" />
+    <Content Include="Web\Register.aspx" />
+    <Content Include="Web\ReinspectionOperation.aspx" />
+    <Content Include="Web\ReinspectionWork.aspx" />
+    <Content Include="Web\ReturnApply.aspx" />
+    <Content Include="Web\returnOrder.aspx" />
+    <Content Include="Web\ReturnQuery.aspx" />
+    <Content Include="Web\ReturnWork.aspx" />
+    <Content Include="Web\ShipSetting.aspx" />
+    <Content Include="Web\SingleQuery.aspx" />
+    <Content Include="Web\VendorSetting.aspx" />
+    <Content Include="Web\warehouseSetting.aspx" />
+    <Content Include="Web\Welcome.aspx" />
+    <Content Include="Web\workOrderSetting.aspx" />
+    <Content Include="Web\workOrderShipping.aspx" />
+    <Content Include="Web\WorkSheetIn.aspx" />
+    <Content Include="Web\worksheetIssue.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase\DB.cs" />
+    <Compile Include="DataCenter\AnalogAcquisitionDC.cs" />
+    <Compile Include="DataCenter\BomDC.cs" />
+    <Compile Include="DataCenter\CustomersDC.cs" />
+    <Compile Include="DataCenter\DepartmentDC.cs" />
+    <Compile Include="DataCenter\Exchange_headerDC.cs" />
+    <Compile Include="DataCenter\Exchange_lineDC.cs" />
+    <Compile Include="DataCenter\FrameDC.cs" />
+    <Compile Include="DataCenter\InventoryDC.cs" />
+    <Compile Include="DataCenter\InvoiceDC.cs" />
+    <Compile Include="DataCenter\IssueHeaderDC.cs" />
+    <Compile Include="DataCenter\IssuelineDC.cs" />
+    <Compile Include="DataCenter\Items_onhand_qty_detailDC.cs" />
+    <Compile Include="DataCenter\Material_ioDC.cs" />
+    <Compile Include="DataCenter\ParametersDC.cs" />
+    <Compile Include="DataCenter\Pickup_mtlDC.cs" />
+    <Compile Include="DataCenter\PnDC.cs" />
+    <Compile Include="DataCenter\PoDC.cs" />
+    <Compile Include="DataCenter\POHeaderDC.cs" />
+    <Compile Include="DataCenter\POLineDC.cs" />
+    <Compile Include="DataCenter\PO_return_detailDC.cs" />
+    <Compile Include="DataCenter\PO_return_headerDC.cs" />
+    <Compile Include="DataCenter\ProgramsDC.cs" />
+    <Compile Include="DataCenter\Receive_mtlDC.cs" />
+    <Compile Include="DataCenter\RegionDC.cs" />
+    <Compile Include="DataCenter\ReinspectHeaderDC.cs" />
+    <Compile Include="DataCenter\Reinspect_parameterDC.cs" />
+    <Compile Include="DataCenter\Requirement_operationDC.cs" />
+    <Compile Include="DataCenter\Return_headerDC.cs" />
+    <Compile Include="DataCenter\Return_lineDC.cs" />
+    <Compile Include="DataCenter\ShipDC.cs" />
+    <Compile Include="DataCenter\Ship_linesDC.cs" />
+    <Compile Include="DataCenter\Simulate_operation.cs" />
+    <Compile Include="DataCenter\StorageDC.cs" />
+    <Compile Include="DataCenter\SubinventoryDC.cs" />
+    <Compile Include="DataCenter\SupplierDC.cs" />
+    <Compile Include="DataCenter\Transaction_operationDC.cs" />
+    <Compile Include="DataCenter\UsersDC.cs" />
+    <Compile Include="DataCenter\WatchdogDC.cs" />
+    <Compile Include="DataCenter\Wip_operationDC.cs" />
+    <Compile Include="DataCenter\Wms_6in1_detailDC.cs" />
+    <Compile Include="DataCenter\Wms_6in1_id_relation.cs" />
+    <Compile Include="DataCenter\WoDC.cs" />
+    <Compile Include="DataCenter\WorkSheetInDC.cs" />
+    <Compile Include="Model\Model6in1_detail.cs" />
+    <Compile Include="Model\Model6in1_id_relation.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\ModelBom.cs" />
+    <Compile Include="Model\ModelCustomers.cs" />
+    <Compile Include="Model\ModelDepartment.cs" />
+    <Compile Include="Model\ModelExchange_header.cs" />
+    <Compile Include="Model\ModelExchange_line.cs" />
+    <Compile Include="Model\ModelFrame.cs" />
+    <Compile Include="Model\ModelItems_onhand_qty_detail.cs" />
+    <Compile Include="Model\ModelMaterial_io.cs" />
+    <Compile Include="Model\ModelMtl_issue_header.cs" />
+    <Compile Include="Model\ModelMtl_issue_line.cs" />
+    <Compile Include="Model\ModelParameters.cs" />
+    <Compile Include="Model\ModelPickup.cs" />
+    <Compile Include="Model\ModelPn.cs" />
+    <Compile Include="Model\ModelPO_Header.cs" />
+    <Compile Include="Model\ModelPO_line.cs" />
+    <Compile Include="Model\ModelPO_return_detail.cs" />
+    <Compile Include="Model\ModelPO_return_header.cs" />
+    <Compile Include="Model\ModelPrograms.cs" />
+    <Compile Include="Model\ModelReceive_mtl.cs" />
+    <Compile Include="Model\ModelRegion.cs" />
+    <Compile Include="Model\ModelReinspect_paremeters.cs" />
+    <Compile Include="Model\ModelRequirement.cs" />
+    <Compile Include="Model\ModelReturn_header.cs" />
+    <Compile Include="Model\ModelReturn_line.cs" />
+    <Compile Include="Model\ModelShip_lines.cs" />
+    <Compile Include="Model\ModelSimulate.cs" />
+    <Compile Include="Model\ModelSubinventory.cs" />
+    <Compile Include="Model\ModelSupplier.cs" />
+    <Compile Include="Model\ModelTransaction_operation.cs" />
+    <Compile Include="Model\ModelUsers.cs" />
+    <Compile Include="Model\ModelWatchdog.cs" />
+    <Compile Include="Model\ModelWip_operations.cs" />
+    <Compile Include="Model\ModelWO.cs" />
+    <Compile Include="Model\ModelShip.cs" />
+    <Compile Include="PDA\aboutWorkSheetIn.ashx.cs">
+      <DependentUpon>aboutWorkSheetIn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\AllocationListPDA.aspx.cs">
+      <DependentUpon>AllocationListPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\AllocationListPDA.aspx.designer.cs">
+      <DependentUpon>AllocationListPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\AllocationPDA.aspx.cs">
+      <DependentUpon>AllocationPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\AllocationPDA.aspx.designer.cs">
+      <DependentUpon>AllocationPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\analogAcquisitionPDA.aspx.cs">
+      <DependentUpon>analogAcquisitionPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\analogAcquisitionPDA.aspx.designer.cs">
+      <DependentUpon>analogAcquisitionPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\areaSettingPDA.aspx.cs">
+      <DependentUpon>areaSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\areaSettingPDA.aspx.designer.cs">
+      <DependentUpon>areaSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\AuthoritySettingPDA.aspx.cs">
+      <DependentUpon>AuthoritySettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\AuthoritySettingPDA.aspx.designer.cs">
+      <DependentUpon>AuthoritySettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\BomSettingPDA.aspx.cs">
+      <DependentUpon>BomSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\BomSettingPDA.aspx.designer.cs">
+      <DependentUpon>BomSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\CheckParameterPDA.aspx.cs">
+      <DependentUpon>CheckParameterPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\CheckParameterPDA.aspx.designer.cs">
+      <DependentUpon>CheckParameterPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\customerInformationPDA.aspx.cs">
+      <DependentUpon>customerInformationPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\customerInformationPDA.aspx.designer.cs">
+      <DependentUpon>customerInformationPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\customerSettingPDA.aspx.cs">
+      <DependentUpon>customerSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\customerSettingPDA.aspx.designer.cs">
+      <DependentUpon>customerSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\DCSerachPDA.aspx.cs">
+      <DependentUpon>DCSerachPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\DCSerachPDA.aspx.designer.cs">
+      <DependentUpon>DCSerachPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\DealDetialPDA.aspx.cs">
+      <DependentUpon>DealDetialPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\DealDetialPDA.aspx.designer.cs">
+      <DependentUpon>DealDetialPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\DpartmentSettingPDA.aspx.cs">
+      <DependentUpon>DpartmentSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\DpartmentSettingPDA.aspx.designer.cs">
+      <DependentUpon>DpartmentSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ExchangeApplyPDA.aspx.cs">
+      <DependentUpon>ExchangeApplyPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ExchangeApplyPDA.aspx.designer.cs">
+      <DependentUpon>ExchangeApplyPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ExchangeQueryPDA.aspx.cs">
+      <DependentUpon>ExchangeQueryPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ExchangeQueryPDA.aspx.designer.cs">
+      <DependentUpon>ExchangeQueryPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ExchangeWorkPDA.aspx.cs">
+      <DependentUpon>ExchangeWorkPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ExchangeWorkPDA.aspx.designer.cs">
+      <DependentUpon>ExchangeWorkPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\frame.ashx.cs">
+      <DependentUpon>frame.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getArea.ashx.cs">
+      <DependentUpon>getArea.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getCustomerNames.ashx.cs">
+      <DependentUpon>getCustomerNames.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getFrame.ashx.cs">
+      <DependentUpon>getFrame.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getInvoiceNo.ashx.cs">
+      <DependentUpon>getInvoiceNo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getProgramName.ashx.cs">
+      <DependentUpon>getProgramName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getRegion_by_Sub.ashx.cs">
+      <DependentUpon>getRegion_by_Sub.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\getUserName.ashx.cs">
+      <DependentUpon>getUserName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\headerFooter.Master.cs">
+      <DependentUpon>headerFooter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\headerFooter.Master.designer.cs">
+      <DependentUpon>headerFooter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\helpIndexPDA.aspx.cs">
+      <DependentUpon>helpIndexPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\helpIndexPDA.aspx.designer.cs">
+      <DependentUpon>helpIndexPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\insert_wms_6in1_detail.ashx.cs">
+      <DependentUpon>insert_wms_6in1_detail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\insert_wms_6in1_id_relation.ashx.cs">
+      <DependentUpon>insert_wms_6in1_id_relation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\IssueApplyPDA.aspx.cs">
+      <DependentUpon>IssueApplyPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\IssueApplyPDA.aspx.designer.cs">
+      <DependentUpon>IssueApplyPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\IssueQueryPDA.aspx.cs">
+      <DependentUpon>IssueQueryPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\IssueQueryPDA.aspx.designer.cs">
+      <DependentUpon>IssueQueryPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\IssueWorkPDA.aspx.cs">
+      <DependentUpon>IssueWorkPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\IssueWorkPDA.aspx.designer.cs">
+      <DependentUpon>IssueWorkPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\JavaScript\wo_no.ashx.cs">
+      <DependentUpon>wo_no.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\LD_warehouse.ashx.cs">
+      <DependentUpon>LD_warehouse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\LoginPDA.aspx.cs">
+      <DependentUpon>LoginPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\LoginPDA.aspx.designer.cs">
+      <DependentUpon>LoginPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\materialRequisitionOperationPDA.aspx.cs">
+      <DependentUpon>materialRequisitionOperationPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\materialRequisitionOperationPDA.aspx.designer.cs">
+      <DependentUpon>materialRequisitionOperationPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\materialRequisitionPagePDA.aspx.cs">
+      <DependentUpon>materialRequisitionPagePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\materialRequisitionPagePDA.aspx.designer.cs">
+      <DependentUpon>materialRequisitionPagePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ModifyPasswordPDA.aspx.cs">
+      <DependentUpon>ModifyPasswordPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ModifyPasswordPDA.aspx.designer.cs">
+      <DependentUpon>ModifyPasswordPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\OperationSetPDA.aspx.cs">
+      <DependentUpon>OperationSetPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\OperationSetPDA.aspx.designer.cs">
+      <DependentUpon>OperationSetPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\operation_seq.ashx.cs">
+      <DependentUpon>operation_seq.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\parametersSettingPDA.aspx.cs">
+      <DependentUpon>parametersSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\parametersSettingPDA.aspx.designer.cs">
+      <DependentUpon>parametersSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PnMaterialsIssuePDA.aspx.cs">
+      <DependentUpon>PnMaterialsIssuePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PnMaterialsIssuePDA.aspx.designer.cs">
+      <DependentUpon>PnMaterialsIssuePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PoAcceptancePDA.aspx.cs">
+      <DependentUpon>PoAcceptancePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PoAcceptancePDA.aspx.designer.cs">
+      <DependentUpon>PoAcceptancePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\polinesetting.ashx.cs">
+      <DependentUpon>polinesetting.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PoReturnPDA.aspx.cs">
+      <DependentUpon>PoReturnPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PoReturnPDA.aspx.designer.cs">
+      <DependentUpon>PoReturnPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PoStoragePDA.aspx.cs">
+      <DependentUpon>PoStoragePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PoStoragePDA.aspx.designer.cs">
+      <DependentUpon>PoStoragePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\POSusp.ashx.cs">
+      <DependentUpon>POSusp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\PoSuspensePDA.aspx.cs">
+      <DependentUpon>PoSuspensePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\PoSuspensePDA.aspx.designer.cs">
+      <DependentUpon>PoSuspensePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\Po_PoLineSettingPDA.aspx.cs">
+      <DependentUpon>Po_PoLineSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\Po_PoLineSettingPDA.aspx.designer.cs">
+      <DependentUpon>Po_PoLineSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ProgramsPDA.aspx.cs">
+      <DependentUpon>ProgramsPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ProgramsPDA.aspx.designer.cs">
+      <DependentUpon>ProgramsPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\rackSettingPDA.aspx.cs">
+      <DependentUpon>rackSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\rackSettingPDA.aspx.designer.cs">
+      <DependentUpon>rackSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\RegisterPDA.aspx.cs">
+      <DependentUpon>RegisterPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\RegisterPDA.aspx.designer.cs">
+      <DependentUpon>RegisterPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ReinspectionOperationPDA.aspx.cs">
+      <DependentUpon>ReinspectionOperationPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ReinspectionOperationPDA.aspx.designer.cs">
+      <DependentUpon>ReinspectionOperationPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ReturnApplyPDA.aspx.cs">
+      <DependentUpon>ReturnApplyPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ReturnApplyPDA.aspx.designer.cs">
+      <DependentUpon>ReturnApplyPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\returnOrderPDA.aspx.cs">
+      <DependentUpon>returnOrderPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\returnOrderPDA.aspx.designer.cs">
+      <DependentUpon>returnOrderPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ReturnQueryPDA.aspx.cs">
+      <DependentUpon>ReturnQueryPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ReturnQueryPDA.aspx.designer.cs">
+      <DependentUpon>ReturnQueryPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ReturnWorkPDA.aspx.cs">
+      <DependentUpon>ReturnWorkPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ReturnWorkPDA.aspx.designer.cs">
+      <DependentUpon>ReturnWorkPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\ShipSettingPDA.aspx.cs">
+      <DependentUpon>ShipSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\ShipSettingPDA.aspx.designer.cs">
+      <DependentUpon>ShipSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\SingleQueryPDA.aspx.cs">
+      <DependentUpon>SingleQueryPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\SingleQueryPDA.aspx.designer.cs">
+      <DependentUpon>SingleQueryPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\usedWoNo.ashx.cs">
+      <DependentUpon>usedWoNo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\VendorSettingPDA.aspx.cs">
+      <DependentUpon>VendorSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\VendorSettingPDA.aspx.designer.cs">
+      <DependentUpon>VendorSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\WareHouse.ashx.cs">
+      <DependentUpon>WareHouse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\warehouseSettingPDA.aspx.cs">
+      <DependentUpon>warehouseSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\warehouseSettingPDA.aspx.designer.cs">
+      <DependentUpon>warehouseSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\WelcomePDA.aspx.cs">
+      <DependentUpon>WelcomePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\WelcomePDA.aspx.designer.cs">
+      <DependentUpon>WelcomePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\workorder.ashx.cs">
+      <DependentUpon>workorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\workOrderSettingPDA.aspx.cs">
+      <DependentUpon>workOrderSettingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\workOrderSettingPDA.aspx.designer.cs">
+      <DependentUpon>workOrderSettingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\workOrderShippingPDA.aspx.cs">
+      <DependentUpon>workOrderShippingPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\workOrderShippingPDA.aspx.designer.cs">
+      <DependentUpon>workOrderShippingPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\WorkSheetInPDA.aspx.cs">
+      <DependentUpon>WorkSheetInPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\WorkSheetInPDA.aspx.designer.cs">
+      <DependentUpon>WorkSheetInPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\worksheetIssuePDA.aspx.cs">
+      <DependentUpon>worksheetIssuePDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\worksheetIssuePDA.aspx.designer.cs">
+      <DependentUpon>worksheetIssuePDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\WorkSheetPickupPDA.aspx.cs">
+      <DependentUpon>WorkSheetPickupPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDA\WorkSheetPickupPDA.aspx.designer.cs">
+      <DependentUpon>WorkSheetPickupPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDA\WO_NO.ashx.cs">
+      <DependentUpon>WO_NO.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Number.cs" />
+    <Compile Include="Util\PageUtil.cs" />
+    <Compile Include="Web\aboutWorkSheetIn.ashx.cs">
+      <DependentUpon>aboutWorkSheetIn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Allocation.aspx.cs">
+      <DependentUpon>Allocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Allocation.aspx.designer.cs">
+      <DependentUpon>Allocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\AllocationList.aspx.cs">
+      <DependentUpon>AllocationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\AllocationList.aspx.designer.cs">
+      <DependentUpon>AllocationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\analogAcquisition.aspx.cs">
+      <DependentUpon>analogAcquisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\analogAcquisition.aspx.designer.cs">
+      <DependentUpon>analogAcquisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\areaSetting.aspx.cs">
+      <DependentUpon>areaSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\areaSetting.aspx.designer.cs">
+      <DependentUpon>areaSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\AuthoritySetting.aspx.cs">
+      <DependentUpon>AuthoritySetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\AuthoritySetting.aspx.designer.cs">
+      <DependentUpon>AuthoritySetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\BomSetting.aspx.cs">
+      <DependentUpon>BomSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\BomSetting.aspx.designer.cs">
+      <DependentUpon>BomSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CheckParameter.aspx.cs">
+      <DependentUpon>CheckParameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CheckParameter.aspx.designer.cs">
+      <DependentUpon>CheckParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\customerInformation.aspx.cs">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\customerInformation.aspx.designer.cs">
+      <DependentUpon>customerInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\customerSetting.aspx.cs">
+      <DependentUpon>customerSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\customerSetting.aspx.designer.cs">
+      <DependentUpon>customerSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\DCSerach.aspx.cs">
+      <DependentUpon>DCSerach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\DCSerach.aspx.designer.cs">
+      <DependentUpon>DCSerach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\DealDetial.aspx.cs">
+      <DependentUpon>DealDetial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\DealDetial.aspx.designer.cs">
+      <DependentUpon>DealDetial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\DpartmentSetting.aspx.cs">
+      <DependentUpon>DpartmentSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\DpartmentSetting.aspx.designer.cs">
+      <DependentUpon>DpartmentSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ExchangeApply.aspx.cs">
+      <DependentUpon>ExchangeApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ExchangeApply.aspx.designer.cs">
+      <DependentUpon>ExchangeApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ExchangeQuery.aspx.cs">
+      <DependentUpon>ExchangeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ExchangeQuery.aspx.designer.cs">
+      <DependentUpon>ExchangeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ExchangeWork.aspx.cs">
+      <DependentUpon>ExchangeWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ExchangeWork.aspx.designer.cs">
+      <DependentUpon>ExchangeWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\frame.ashx.cs">
+      <DependentUpon>frame.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getArea.ashx.cs">
+      <DependentUpon>getArea.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getWono_by_itemname.ashx.cs">
+      <DependentUpon>getWono_by_itemname.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getCustomerNames.ashx.cs">
+      <DependentUpon>getCustomerNames.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getDepartment.ashx.cs">
+      <DependentUpon>getDepartment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getDepartmentDescription.ashx.cs">
+      <DependentUpon>getDepartmentDescription.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getFrame.ashx.cs">
+      <DependentUpon>getFrame.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getInvoiceNo.ashx.cs">
+      <DependentUpon>getInvoiceNo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getProgramName.ashx.cs">
+      <DependentUpon>getProgramName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getRegion_by_Sub.ashx.cs">
+      <DependentUpon>getRegion_by_Sub.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getSubinventory.ashx.cs">
+      <DependentUpon>getSubinventory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getUserName.ashx.cs">
+      <DependentUpon>getUserName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\get_new_ship_no.ashx.cs">
+      <DependentUpon>get_new_ship_no.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\get_prat_no_by_wono.ashx.cs">
+      <DependentUpon>get_prat_no_by_wono.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\headerFooter.Master.cs">
+      <DependentUpon>headerFooter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\headerFooter.Master.designer.cs">
+      <DependentUpon>headerFooter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Web\helpIndex.aspx.cs">
+      <DependentUpon>helpIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\helpIndex.aspx.designer.cs">
+      <DependentUpon>helpIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\InventoryQuery.aspx.cs">
+      <DependentUpon>InventoryQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\InventoryQuery.aspx.designer.cs">
+      <DependentUpon>InventoryQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\IssueApply.aspx.cs">
+      <DependentUpon>IssueApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\IssueApply.aspx.designer.cs">
+      <DependentUpon>IssueApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\IssueQuery.aspx.cs">
+      <DependentUpon>IssueQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\IssueQuery.aspx.designer.cs">
+      <DependentUpon>IssueQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\IssueWork.aspx.cs">
+      <DependentUpon>IssueWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\IssueWork.aspx.designer.cs">
+      <DependentUpon>IssueWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\JavaScript\wo_no.ashx.cs">
+      <DependentUpon>wo_no.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\LD_warehouse.ashx.cs">
+      <DependentUpon>LD_warehouse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\materialRequisitionOperation.aspx.cs">
+      <DependentUpon>materialRequisitionOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\materialRequisitionOperation.aspx.designer.cs">
+      <DependentUpon>materialRequisitionOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\materialRequisitionPage.aspx.cs">
+      <DependentUpon>materialRequisitionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\materialRequisitionPage.aspx.designer.cs">
+      <DependentUpon>materialRequisitionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ModifyPassword.aspx.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ModifyPassword.aspx.designer.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\OperationSet.aspx.cs">
+      <DependentUpon>OperationSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\OperationSet.aspx.designer.cs">
+      <DependentUpon>OperationSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\operation_seq.ashx.cs">
+      <DependentUpon>operation_seq.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\parametersSetting.aspx.cs">
+      <DependentUpon>parametersSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\parametersSetting.aspx.designer.cs">
+      <DependentUpon>parametersSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PnMaterialsIssue.aspx.cs">
+      <DependentUpon>PnMaterialsIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PnMaterialsIssue.aspx.designer.cs">
+      <DependentUpon>PnMaterialsIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PoAcceptance.aspx.cs">
+      <DependentUpon>PoAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PoAcceptance.aspx.designer.cs">
+      <DependentUpon>PoAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\polinesetting.ashx.cs">
+      <DependentUpon>polinesetting.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PoReturn.aspx.cs">
+      <DependentUpon>PoReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PoReturn.aspx.designer.cs">
+      <DependentUpon>PoReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PoStorage.aspx.cs">
+      <DependentUpon>PoStorage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PoStorage.aspx.designer.cs">
+      <DependentUpon>PoStorage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\POSusp.ashx.cs">
+      <DependentUpon>POSusp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\PoSuspense.aspx.cs">
+      <DependentUpon>PoSuspense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\PoSuspense.aspx.designer.cs">
+      <DependentUpon>PoSuspense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Po_PoLineSetting.aspx.cs">
+      <DependentUpon>Po_PoLineSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Po_PoLineSetting.aspx.designer.cs">
+      <DependentUpon>Po_PoLineSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printMaterialRequisition.aspx.cs">
+      <DependentUpon>printMaterialRequisition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printMaterialRequisition.aspx.designer.cs">
+      <DependentUpon>printMaterialRequisition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printMaterialReturning.aspx.cs">
+      <DependentUpon>printMaterialReturning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printMaterialReturning.aspx.designer.cs">
+      <DependentUpon>printMaterialReturning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printSinglePreparation.aspx.cs">
+      <DependentUpon>printSinglePreparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printSinglePreparation.aspx.designer.cs">
+      <DependentUpon>printSinglePreparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printStorageList.aspx.cs">
+      <DependentUpon>printStorageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printStorageList.aspx.designer.cs">
+      <DependentUpon>printStorageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printTransFerringOrder.aspx.cs">
+      <DependentUpon>printTransFerringOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printTransFerringOrder.aspx.designer.cs">
+      <DependentUpon>printTransFerringOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\printWoNo.aspx.cs">
+      <DependentUpon>printWoNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\printWoNo.aspx.designer.cs">
+      <DependentUpon>printWoNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Programs.aspx.cs">
+      <DependentUpon>Programs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Programs.aspx.designer.cs">
+      <DependentUpon>Programs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\rackSetting.aspx.cs">
+      <DependentUpon>rackSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\rackSetting.aspx.designer.cs">
+      <DependentUpon>rackSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ReinspectionOperation.aspx.cs">
+      <DependentUpon>ReinspectionOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ReinspectionOperation.aspx.designer.cs">
+      <DependentUpon>ReinspectionOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ReinspectionWork.aspx.cs">
+      <DependentUpon>ReinspectionWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ReinspectionWork.aspx.designer.cs">
+      <DependentUpon>ReinspectionWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ReturnApply.aspx.cs">
+      <DependentUpon>ReturnApply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ReturnApply.aspx.designer.cs">
+      <DependentUpon>ReturnApply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\returnOrder.aspx.cs">
+      <DependentUpon>returnOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\returnOrder.aspx.designer.cs">
+      <DependentUpon>returnOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ReturnQuery.aspx.cs">
+      <DependentUpon>ReturnQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ReturnQuery.aspx.designer.cs">
+      <DependentUpon>ReturnQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ReturnWork.aspx.cs">
+      <DependentUpon>ReturnWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ReturnWork.aspx.designer.cs">
+      <DependentUpon>ReturnWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ShipSetting.aspx.cs">
+      <DependentUpon>ShipSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ShipSetting.aspx.designer.cs">
+      <DependentUpon>ShipSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\SingleQuery.aspx.cs">
+      <DependentUpon>SingleQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\SingleQuery.aspx.designer.cs">
+      <DependentUpon>SingleQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\subinventoryandframe.ashx.cs">
+      <DependentUpon>subinventoryandframe.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\usedWoNo.ashx.cs">
+      <DependentUpon>usedWoNo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\venderkeysetting.ashx.cs">
+      <DependentUpon>venderkeysetting.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\VendorSetting.aspx.cs">
+      <DependentUpon>VendorSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\VendorSetting.aspx.designer.cs">
+      <DependentUpon>VendorSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WareHouse.ashx.cs">
+      <DependentUpon>WareHouse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\warehouseSetting.aspx.cs">
+      <DependentUpon>warehouseSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\warehouseSetting.aspx.designer.cs">
+      <DependentUpon>warehouseSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\workorder.ashx.cs">
+      <DependentUpon>workorder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\workOrderSetting.aspx.cs">
+      <DependentUpon>workOrderSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\workOrderSetting.aspx.designer.cs">
+      <DependentUpon>workOrderSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\workOrderShipping.aspx.cs">
+      <DependentUpon>workOrderShipping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\workOrderShipping.aspx.designer.cs">
+      <DependentUpon>workOrderShipping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WorkSheetIn.aspx.cs">
+      <DependentUpon>WorkSheetIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WorkSheetIn.aspx.designer.cs">
+      <DependentUpon>WorkSheetIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\worksheetIssue.aspx.cs">
+      <DependentUpon>worksheetIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\worksheetIssue.aspx.designer.cs">
+      <DependentUpon>worksheetIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WorkSheetPickup.aspx.cs">
+      <DependentUpon>WorkSheetPickup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WorkSheetPickup.aspx.designer.cs">
+      <DependentUpon>WorkSheetPickup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WO_NO.ashx.cs">
+      <DependentUpon>WO_NO.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getAllSubinventory.ashx.cs">
+      <DependentUpon>getAllSubinventory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\getALLProgram.ashx.cs">
+      <DependentUpon>getALLProgram.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PDA\aboutWorkSheetIn.ashx" />
+    <Content Include="PDA\frame.ashx" />
+    <Content Include="PDA\getArea.ashx" />
+    <Content Include="PDA\getCustomerNames.ashx" />
+    <Content Include="PDA\getFrame.ashx" />
+    <Content Include="PDA\getInvoiceNo.ashx" />
+    <Content Include="PDA\getProgramName.ashx" />
+    <Content Include="PDA\getRegion_by_Sub.ashx" />
+    <Content Include="PDA\getUserName.ashx" />
+    <Content Include="PDA\headerFooter.Master" />
+    <Content Include="PDA\JavaScript\wo_no.ashx" />
+    <Content Include="PDA\LD_warehouse.ashx" />
+    <Content Include="PDA\operation_seq.ashx" />
+    <Content Include="PDA\polinesetting.ashx" />
+    <Content Include="PDA\POSusp.ashx" />
+    <Content Include="PDA\usedWoNo.ashx" />
+    <Content Include="PDA\WareHouse.ashx" />
+    <Content Include="PDA\workorder.ashx" />
+    <Content Include="PDA\WO_NO.ashx" />
+    <Content Include="PDA\insert_wms_6in1_detail.ashx" />
+    <Content Include="PDA\insert_wms_6in1_id_relation.ashx" />
+    <None Include="Properties\PublishProfiles\net.pubxml" />
+    <None Include="Properties\PublishProfiles\web.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web\headerFooter.Master" />
+    <Content Include="Web\WareHouse.ashx" />
+    <Content Include="Web\WorkSheetPickup.aspx" />
+    <Content Include="Web\WO_NO.ashx" />
+    <Content Include="Web\frame.ashx" />
+    <Content Include="Web\operation_seq.ashx" />
+    <Content Include="Web\getArea.ashx" />
+    <Content Include="Web\getCustomerNames.ashx" />
+    <Content Include="Web\getProgramName.ashx" />
+    <Content Include="Web\getRegion_by_Sub.ashx" />
+    <Content Include="Web\getSubinventory.ashx" />
+    <Content Include="Web\getUserName.ashx" />
+    <Content Include="Web\usedWoNo.ashx" />
+    <Content Include="Web\workorder.ashx" />
+    <Content Include="Web\JavaScript\wo_no.ashx" />
+    <Content Include="Web\aboutWorkSheetIn.ashx" />
+    <Content Include="Web\getFrame.ashx" />
+    <Content Include="Web\getInvoiceNo.ashx" />
+    <Content Include="Web\LD_warehouse.ashx" />
+    <Content Include="Web\polinesetting.ashx" />
+    <Content Include="Web\venderkeysetting.ashx" />
+    <Content Include="Web\getAllSubinventory.ashx" />
+    <Content Include="Web\getALLProgram.ashx" />
+    <Content Include="Web\getDepartment.ashx" />
+    <Content Include="Web\getDepartmentDescription.ashx" />
+    <Content Include="Web\subinventoryandframe.ashx" />
+    <Content Include="Web\getWono_by_itemname.ashx" />
+    <Content Include="Web\POSusp.ashx" />
+    <Content Include="Web\get_prat_no_by_wono.ashx" />
+    <Content Include="Web\get_new_ship_no.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib\" />
+    <Folder Include="PDA\help4WMS\1.11.files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3069</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2033/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

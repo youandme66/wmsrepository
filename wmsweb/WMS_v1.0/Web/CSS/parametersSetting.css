@@ -1,0 +1,20 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+}
+
+   .list_item .tab .tdLab {
+            display: inline-block;
+            width: 12%;
+            text-align: center;
+        }
+
+            .list_item .tab .tdLab .selectBtn {
+                width: 70%;
+                margin:0 10px;
+            }
+
+        .list_item .tab .tdInput {
+            display: inline-block;
+            width: 18%;
+        }

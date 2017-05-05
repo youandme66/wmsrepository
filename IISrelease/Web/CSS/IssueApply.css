@@ -1,0 +1,21 @@
+﻿/*-----------搜索区----------------*/
+.list_item .tab .tdLab {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
+.list_item .tab .tdInput {
+    display: inline-block;
+    width: 14%;
+}
+
+.list_item .tab .tdButton {
+    display: inline-block;
+    width: 14%;
+}
+
+
+.list_item .tab .tdButton1 {
+   margin-left:0px;
+}

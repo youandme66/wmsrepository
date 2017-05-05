@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/v5_0_1_flipper_head_blue_background"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/wip_turnin_gohome"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="半成品存倉"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/formtitle_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/wip_turnin_refresh"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh_button" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/v5_0_1_friend_search_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edbarcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/edittext_bg"
+            android:drawablePadding="8dip"
+            android:hint="请输入單據號"
+            android:text="@string/testinvoice"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/wip_turnin_display"
+        android:layout_width="104dp"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#80333333"
+        android:dividerHeight="1px"
+        android:listSelector="#00000000" >
+
+    </ListView>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

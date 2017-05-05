@@ -1,0 +1,393 @@
+package com.askey.Adapter;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import com.askey.model.AppData;
+import com.askey.model.CustomHttpClient;
+import com.askey.model.K_table;
+import com.askey.model.Texchangequery;
+import com.askey.wms.R;
+
+public class Exchange_in_Adapter extends BaseAdapter {
+	private Context mContext;
+
+	public Exchange_in_Adapter(Context context) {
+		mContext = context;
+	}
+
+	public int getCount() {
+		return AppData.mexchangequery.size();
+	}
+
+	public Object getItem(int position) {
+		return null;
+	}
+
+	public long getItemId(int position) {
+		return 0;
+	}
+	public static String Request_in(Context context, String invoice_no) {
+		// private static final CommonLog log = LogFactory.createLog();
+		try {
+			String strURL = String.format(K_table.exchangequery_in, invoice_no)
+					.replaceAll(" ", "%20");
+			String strData = CustomHttpClient.getFromWebByHttpClient(context,
+					strURL);
+			return strData;
+		} catch (Exception e) {
+			return "{\"result\":\"" + e.getMessage().toString() + "\"}";
+		}
+	}
+   
+	public static String CommitExchangeTrans_In(Context context,
+			String exchange_line_id,
+			String invoice_no, 
+			String item_name, 
+			String item_id, 
+			String out_sub_name,
+	        String out_locator_name, 
+	        String out_org_id,
+	        String out_frame_name, 
+	        String in_sub_name, 
+	        String in_locator_name, 
+	        String in_org_id, 
+	        String in_frame_name,
+	        String model_name, 
+	        String duty_dept_code, 
+	        String scrap_type, 
+	        String model_type, 
+	        String reason_code, 
+	        String wo_no, 
+	        String scrap_line_id, 
+	        String remark,
+	        String customer_code, 
+	        String demand_id, 
+	        String suffocate_code, 
+	        String transaction_type_id, 
+	        String charge_no, 
+	        String create_by, 
+	        String v_in_qty, 
+	        String dc,
+	        String operation_line_id,
+	        String out_mtl_io_id) {
+		try {
+			String strURL = String.format(K_table.exchangetrans_in,
+					exchange_line_id,
+					invoice_no, 
+					item_name, 
+					item_id, 
+					out_sub_name,
+			        out_locator_name, 
+			        out_org_id,
+			        out_frame_name, 
+			        in_sub_name, 
+			        in_locator_name, 
+			        in_org_id, 
+			        in_frame_name,
+			        model_name, 
+			        duty_dept_code, 
+			        scrap_type, 
+			        model_type, 
+			        reason_code, 
+			        wo_no, 
+			        scrap_line_id, 
+			        remark,
+			        customer_code, 
+			        demand_id, 
+			        suffocate_code, 
+			        transaction_type_id, 
+			        charge_no, 
+			        create_by, 
+			        v_in_qty, 
+			        dc,
+			        operation_line_id,
+			        out_mtl_io_id).replaceAll(" ", "%20");
+			String strData = CustomHttpClient.getFromWebByHttpClient(context,
+					strURL);
+			return strData;
+		} catch (Exception e) {
+			return "{\"result\":\"" + e.getMessage().toString() + "\"}";
+		}
+	}
+	
+	public static void Resolve(String Response) {
+		try {
+			AppData.mexchangequery.clear();
+			JSONObject json = new JSONObject(Response);
+			JSONArray array = json.getJSONArray("result");
+			Texchangequery item = new Texchangequery();
+			// 增加表頭
+			item.Setinvoice_no("單據號");
+			item.Setitem_name("料號");
+			item.Setrequired_qty("需求量");
+			item.Setbalance_qty("剩餘量");
+			item.setOut_qty("OUT_QTY");
+			item.setOut_dc("OUT_DC");
+			item.Setout_org_id("OUT_ORG");
+			item.Setout_sub_name("OUT_SUB");
+			item.Setout_locator_name("OUT_LOC");
+			item.Setin_org_id("IN_ORG");
+			item.Setin_sub_name("IN_SUB");
+			item.Setin_locator_name("IN_LOC");
+			//
+			AppData.mexchangequery.add(item);
+
+			for (int i = 0; i < array.length(); i++) {
+				item = new Texchangequery();
+
+				item.Setexchange_header_id(array.getJSONObject(i).getString(
+						"EXCHANGE_HEADER_ID"));
+				item.Setexchange_line_id(array.getJSONObject(i).getString(
+						"EXCHANGE_LINE_ID"));
+				item.Setinvoice_no(array.getJSONObject(i).getString(
+						"INVOICE_NO"));
+				item.Setitem_name(array.getJSONObject(i).getString("ITEM_NAME"));
+				item.Setitem_id(array.getJSONObject(i).getString("ITEM_ID"));
+				item.Setrequired_qty(array.getJSONObject(i).getString(
+						"REQUIRED_QTY"));
+				item.Setbalance_qty(array.getJSONObject(i).getString(
+						"BALANCE_QTY"));
+				item.Setout_sub_name(array.getJSONObject(i).getString(
+						"OUT_SUB_NAME"));
+				item.Setout_locator_name(array.getJSONObject(i).getString(
+						"OUT_LOCATOR_NAME"));
+				item.Setout_org_id(array.getJSONObject(i).getString(
+						"OUT_ORG_ID"));
+				item.setOut_qty(array.getJSONObject(i).getString(
+						"OUT_QTY"));
+				item.setOut_dc(array.getJSONObject(i).getString(
+						"OUT_DC"));
+				item.Setin_sub_name(array.getJSONObject(i).getString(
+						"IN_SUB_NAME"));
+				item.Setin_locator_name(array.getJSONObject(i).getString(
+						"IN_LOCATOR_NAME"));
+				item.Setin_org_id(array.getJSONObject(i).getString("IN_ORG_ID"));
+				item.Setmodel_name(array.getJSONObject(i).getString(
+						"MODEL_NAME"));
+				item.Setduty_dept_code(array.getJSONObject(i).getString(
+						"DUTY_DEPT_CODE"));
+				item.Setscrap_type(array.getJSONObject(i).getString(
+						"SCRAP_TYPE"));
+				item.Setmodel_type(array.getJSONObject(i).getString(
+						"MODEL_TYPE"));
+				item.Setreason_code(array.getJSONObject(i).getString(
+						"REASON_CODE"));
+				item.Setwo_no(array.getJSONObject(i).getString("WO_NO"));
+				item.Setscrap_line_id(array.getJSONObject(i).getString(
+						"SCRAP_LINE_ID"));
+				item.Setremark(array.getJSONObject(i).getString("REMARK"));
+				item.Setcustomer_code(array.getJSONObject(i).getString(
+						"CUSTOMER_CODE"));
+				item.Setdemand_id(array.getJSONObject(i).getString("DEMAND_ID"));
+				item.Setsuffocate_code(array.getJSONObject(i).getString(
+						"SUFFOCATE_CODE"));
+				item.Settransaction_type_id(array.getJSONObject(i).getString(
+						"TRANSACTION_TYPE_ID"));
+				item.Setcharge_no(array.getJSONObject(i).getString("CHARGE_NO"));
+				item.setOperation_line_id(array.getJSONObject(i).getString("OPERATION_LINE_ID"));
+				item.setOut_mtl_io_id(array.getJSONObject(i).getString("OUT_MTL_IO_ID"));
+				item.setOutneedframe(array.getJSONObject(i).getString(
+						"OUTNEEDFRAME"));
+				item.setInneedframe(array.getJSONObject(i).getString(
+						"INNEEDFRAME"));
+				//
+				AppData.mexchangequery.add(item);
+			}
+		} catch (Exception e) {
+
+		}
+
+	}
+
+	public View getView(final int position, View convertView, ViewGroup parent) {
+		ViewHolder holder = null;
+		//
+		if (convertView == null) {
+			convertView = LayoutInflater.from(mContext).inflate(
+					R.layout.exchange_in_queryitem, null);
+			holder = new ViewHolder();
+
+			holder.mexchange_header_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_exchange_header_id);
+			holder.mexchange_line_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_exchange_line_id);
+			holder.minvoice_no = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_invoice_no);
+			holder.mitem_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_item_name);
+			holder.mitem_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_item_id);
+			holder.mrequired_qty = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_required_qty);
+			holder.mbalance_qty = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_balance_qty);
+			holder.mout_sub_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_out_sub_name);
+			holder.mout_locator_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_out_locator_name);
+			holder.mout_org_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_out_org_id);
+			holder.mout_qty = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_out_qty);
+			holder.mout_dc = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_out_dc);
+			holder.min_sub_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_in_sub_name);
+			holder.min_locator_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_in_locator_name);
+			holder.min_org_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_in_org_id);
+			holder.mmodel_name = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_model_name);
+			holder.mduty_dept_code = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_duty_dept_code);
+			holder.mscrap_type = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_scrap_type);
+			holder.mmodel_type = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_model_type);
+			holder.mreason_code = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_reason_code);
+			holder.mwo_no = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_wo_no);
+			holder.mscrap_line_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_scrap_line_id);
+			holder.mremark = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_remark);
+			holder.mcustomer_code = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_customer_code);
+			holder.mdemand_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_demand_id);
+			holder.msuffocate_code = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_suffocate_code);
+			holder.mtransaction_type_id = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_transaction_type_id);
+			holder.mcharge_no = (TextView) convertView
+					.findViewById(R.id.exchange_in_query_charge_no);
+			//
+			convertView.setTag(holder);
+		} else {
+			holder = (ViewHolder) convertView.getTag();
+		}
+		//
+		holder.minvoice_no
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.cinvoice));
+		holder.mitem_name
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.citemname));
+		holder.mrequired_qty
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.cqty));
+		holder.mbalance_qty
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.cqty));
+		holder.mout_qty.setWidth((int) (AppData.screenwidth * AppData.colwidth.cqty));
+		holder.mout_dc.setWidth((int) (AppData.screenwidth * AppData.colwidth.cdc));
+		holder.mout_org_id
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.corgid));
+		holder.mout_sub_name
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.csubinv));
+		holder.mout_locator_name
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.clocator));
+		holder.min_org_id
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.corgid));
+		holder.min_sub_name
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.csubinv));
+		holder.min_locator_name
+				.setWidth((int) (AppData.screenwidth * AppData.colwidth.clocator));
+		//
+
+		holder.mexchange_header_id.setText(AppData.mexchangequery.get(position)
+				.Getexchange_header_id());
+		holder.mexchange_line_id.setText(AppData.mexchangequery.get(position)
+				.Getexchange_line_id());
+		holder.minvoice_no.setText(AppData.mexchangequery.get(position)
+				.Getinvoice_no());
+		holder.mitem_name.setText(AppData.mexchangequery.get(position)
+				.Getitem_name());
+		holder.mitem_id.setText(AppData.mexchangequery.get(position)
+				.Getitem_id());
+		holder.mrequired_qty.setText(AppData.mexchangequery.get(position)
+				.Getrequired_qty());
+		holder.mbalance_qty.setText(AppData.mexchangequery.get(position)
+				.Getbalance_qty());
+		holder.mout_qty.setText(AppData.mexchangequery.get(position)
+				.getOut_qty());
+		holder.mout_dc.setText(AppData.mexchangequery.get(position)
+				.getOut_dc());
+		holder.mout_sub_name.setText(AppData.mexchangequery.get(position)
+				.Getout_sub_name());
+		holder.mout_locator_name.setText(AppData.mexchangequery.get(position)
+				.Getout_locator_name());
+		holder.mout_org_id.setText(AppData.mexchangequery.get(position)
+				.Getout_org_id());
+		holder.min_sub_name.setText(AppData.mexchangequery.get(position)
+				.Getin_sub_name());
+		holder.min_locator_name.setText(AppData.mexchangequery.get(position)
+				.Getin_locator_name());
+		holder.min_org_id.setText(AppData.mexchangequery.get(position)
+				.Getin_org_id());
+		holder.mmodel_name.setText(AppData.mexchangequery.get(position)
+				.Getmodel_name());
+		holder.mduty_dept_code.setText(AppData.mexchangequery.get(position)
+				.Getduty_dept_code());
+		holder.mscrap_type.setText(AppData.mexchangequery.get(position)
+				.Getscrap_type());
+		holder.mmodel_type.setText(AppData.mexchangequery.get(position)
+				.Getmodel_type());
+		holder.mreason_code.setText(AppData.mexchangequery.get(position)
+				.Getreason_code());
+		holder.mwo_no.setText(AppData.mexchangequery.get(position).Getwo_no());
+		holder.mscrap_line_id.setText(AppData.mexchangequery.get(position)
+				.Getscrap_line_id());
+		holder.mremark
+				.setText(AppData.mexchangequery.get(position).Getremark());
+		holder.mcustomer_code.setText(AppData.mexchangequery.get(position)
+				.Getcustomer_code());
+		holder.mdemand_id.setText(AppData.mexchangequery.get(position)
+				.Getdemand_id());
+		holder.msuffocate_code.setText(AppData.mexchangequery.get(position)
+				.Getsuffocate_code());
+		holder.mtransaction_type_id.setText(AppData.mexchangequery
+				.get(position).Gettransaction_type_id());
+		holder.mcharge_no.setText(AppData.mexchangequery.get(position)
+				.Getcharge_no());
+		//
+		return convertView;
+	}
+
+	class ViewHolder {
+		TextView mexchange_header_id;
+		TextView mexchange_line_id;
+		TextView minvoice_no;
+		TextView mitem_name;
+		TextView mitem_id;
+		TextView mrequired_qty;
+		TextView mbalance_qty;
+		TextView mout_sub_name;
+		TextView mout_locator_name;
+		TextView mout_org_id;
+		TextView mout_qty;
+		TextView mout_dc;
+		TextView min_sub_name;
+		TextView min_locator_name;
+		TextView min_org_id;
+		TextView mmodel_name;
+		TextView mduty_dept_code;
+		TextView mscrap_type;
+		TextView mmodel_type;
+		TextView mreason_code;
+		TextView mwo_no;
+		TextView mscrap_line_id;
+		TextView mremark;
+		TextView mcustomer_code;
+		TextView mdemand_id;
+		TextView msuffocate_code;
+		TextView mtransaction_type_id;
+		TextView mcharge_no;
+	}
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_0_1_friends_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/querystock_pn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_subinv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_pn"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_subinv"
+            android:paddingBottom="0dip"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_frame"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/querystock_onhandqty_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_dc"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+        <TextView
+            android:id="@+id/querystock_onhandqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_onhandqty_dc"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_simqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_onhandqty"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_pickedqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_simqty"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_returnflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_pickedqty"
+            android:paddingBottom="0dip"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_reinspectstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_returnflag"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize" />
+
+        <TextView
+            android:id="@+id/querystock_lastreinspecttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_reinspectstatus"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/querystock_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="@dimen/colmargin"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/querystock_lastreinspecttime"
+            android:paddingBottom="0dip"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/textview_textsize"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

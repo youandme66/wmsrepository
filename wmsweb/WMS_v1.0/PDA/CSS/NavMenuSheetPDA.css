@@ -1,0 +1,83 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.NavigationMenu {
+    Width: 100%;
+    Font-Size: 17px;
+    background-color: #F5F5DC;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+    .NavigationMenu > ul > li > a {
+        Width: 100%;
+        Font-Size: 20px;
+        font-weight: 200;
+    }
+
+.footer {
+    padding:10px;
+    background-color: #dbdee0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footerDiv {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    display: block;
+    float: left;
+    width: 100%;
+}
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/*------------------- 导航字----------------------------------*/
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+/*------------------- 导航背景色，字体大小-----------------------*/
+.navbar-default {
+    font-size: 20PX;
+    background-color: #345465;
+    border-color: #e7e7e7;
+}
+
+/*-----------ＷＭＳ-----------------*/
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 24px;
+    color: #fff;
+    font-size: larger;
+}
+
+
+
+/*------------------ 点击导航时出现的红色和里面的字颜色--------------------------*/
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #000000;
+    background-color: #af464a;
+}
+
+/*--------------整个导航往中间移-------------------*/
+.nav {
+    padding-left: 111px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    /*------------导航栏每个字之间的距离----------------------*/
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 24px;
+    }
